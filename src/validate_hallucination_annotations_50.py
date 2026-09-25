@@ -1,441 +1,77 @@
+"""Validate the manual annotation file and report non-inflated statistics."""
+
+from pathlib import Path
 import pandas as pd
+from hallucination_labeling import parse_bool
 
-
-# ==========================================
-# Configuration
-# ==========================================
-
-INPUT_FILE = (
-    "data/processed/"
-    "rag_50_hallucination_annotation.csv"
-)
-
-
-# ==========================================
-# Allowed values
-# ==========================================
-
-ALLOWED_SUPPORT = {
-    "supported",
-    "partially_supported",
-    "unsupported",
-    "abstention"
+INPUT_FILE = Path("data/processed/rag_50_hallucination_annotation.csv")
+ALLOWED_SUPPORT = {"supported", "partially_supported", "unsupported", "abstention"}
+EXPECTED_LABEL = {
+    "supported": 0, "partially_supported": 1,
+    "unsupported": 1, "abstention": 0,
 }
+ALLOWED_CONFIDENCE = {"high", "medium", "low"}
 
 
-EXPECTED_LABEL_MAPPING = {
-    "supported": 0,
-    "abstention": 0,
-    "partially_supported": 1,
-    "unsupported": 1
-}
+def main():
+    df = pd.read_csv(INPUT_FILE)
+    required = {
+        "query_id", "question", "retrieved_context", "generated_answer",
+        "abstained", "context_support", "hallucination_label",
+        "annotation_reason", "annotator_confidence",
+    }
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"Missing required columns: {sorted(missing)}")
+    if df["query_id"].duplicated().any():
+        raise ValueError("Duplicate query IDs found")
 
-
-ALLOWED_CONFIDENCE = {
-    "high",
-    "medium",
-    "low"
-}
-
-
-# ==========================================
-# Load annotations
-# ==========================================
-
-print(
-    "Loading hallucination annotations..."
-)
-
-df = pd.read_csv(
-    INPUT_FILE
-)
-
-print(
-    "Rows loaded:",
-    len(df)
-)
-
-
-# ==========================================
-# Required columns
-# ==========================================
-
-required_columns = [
-    "query_id",
-    "question",
-    "expected_answer",
-    "retrieved_context",
-    "generated_answer",
-    "abstained",
-    "exact_match",
-    "answer_f1",
-    "correctness_status",
-    "context_support",
-    "hallucination_label",
-    "annotation_reason",
-    "annotator_confidence"
-]
-
-
-missing_columns = [
-    column
-    for column in required_columns
-    if column not in df.columns
-]
-
-
-if missing_columns:
-
-    raise ValueError(
-        "Missing required columns: "
-        + ", ".join(missing_columns)
+    text_columns = ["context_support", "annotation_reason", "annotator_confidence"]
+    blank = df[text_columns].isna() | df[text_columns].astype(str).apply(
+        lambda column: column.str.strip().eq("")
     )
+    if blank.any(axis=1).any():
+        bad_ids = df.loc[blank.any(axis=1), "query_id"].tolist()
+        raise ValueError(f"Incomplete annotations for query IDs: {bad_ids}")
 
+    df["abstained"] = df["abstained"].map(parse_bool)
+    df["context_support"] = df["context_support"].str.strip().str.lower()
+    df["annotator_confidence"] = df["annotator_confidence"].str.strip().str.lower()
+    df["hallucination_label"] = pd.to_numeric(
+        df["hallucination_label"], errors="raise"
+    ).astype(int)
 
-# ==========================================
-# Check missing annotations
-# ==========================================
+    if not df["context_support"].isin(ALLOWED_SUPPORT).all():
+        raise ValueError("Invalid context_support value")
+    if not df["annotator_confidence"].isin(ALLOWED_CONFIDENCE).all():
+        raise ValueError("Invalid annotator_confidence value")
+    if not df["hallucination_label"].isin({0, 1}).all():
+        raise ValueError("hallucination_label must be 0 or 1")
+    expected = df["context_support"].map(EXPECTED_LABEL)
+    if not expected.equals(df["hallucination_label"]):
+        bad_ids = df.loc[expected != df["hallucination_label"], "query_id"].tolist()
+        raise ValueError(f"Support/label mapping errors for query IDs: {bad_ids}")
+    abstention_support = df["context_support"].eq("abstention")
+    if not abstention_support.equals(df["abstained"]):
+        bad_ids = df.loc[abstention_support != df["abstained"], "query_id"].tolist()
+        raise ValueError(f"Abstention consistency errors for query IDs: {bad_ids}")
 
-annotation_columns = [
-    "context_support",
-    "hallucination_label",
-    "annotation_reason",
-    "annotator_confidence"
-]
-
-
-missing_annotations = (
-    df[annotation_columns]
-    .isna()
-    .any(axis=1)
-)
-
-
-if missing_annotations.any():
-
+    answered = df.loc[~df["abstained"]]
+    print("HALLUCINATION ANNOTATION VALIDATION")
+    print(f"Total rows: {len(df)}")
+    print(f"Answered responses: {len(answered)}")
+    print(f"Abstentions: {df['abstained'].sum()}")
+    print(f"Answer coverage: {len(answered) / len(df):.3f}")
     print(
-        "\nERROR:"
+        "Hallucination rate among answered responses: "
+        f"{answered['hallucination_label'].mean():.3f}"
     )
-
-    print(
-        "Some rows have missing annotations."
-    )
-
-    print(
-        df.loc[
-            missing_annotations,
-            [
-                "query_id",
-                "question"
-            ]
-        ]
-    )
-
-    raise ValueError(
-        "Incomplete manual annotations."
-    )
-
-
-# ==========================================
-# Normalize annotation text
-# ==========================================
-
-df["context_support"] = (
-    df["context_support"]
-    .astype(str)
-    .str.strip()
-    .str.lower()
-)
-
-
-df["annotator_confidence"] = (
-    df["annotator_confidence"]
-    .astype(str)
-    .str.strip()
-    .str.lower()
-)
-
-
-df["hallucination_label"] = (
-    pd.to_numeric(
-        df["hallucination_label"],
-        errors="raise"
-    )
-    .astype(int)
-)
-
-
-# ==========================================
-# Validate support values
-# ==========================================
-
-invalid_support = ~df[
-    "context_support"
-].isin(
-    ALLOWED_SUPPORT
-)
-
-
-if invalid_support.any():
-
-    print(
-        "\nInvalid context_support values:"
-    )
-
-    print(
-        df.loc[
-            invalid_support,
-            [
-                "query_id",
-                "context_support"
-            ]
-        ]
-    )
-
-    raise ValueError(
-        "Invalid context_support value."
-    )
-
-
-# ==========================================
-# Validate hallucination labels
-# ==========================================
-
-invalid_labels = ~df[
-    "hallucination_label"
-].isin(
-    [0, 1]
-)
-
-
-if invalid_labels.any():
-
-    raise ValueError(
-        "hallucination_label must be 0 or 1."
-    )
-
-
-# ==========================================
-# Validate confidence
-# ==========================================
-
-invalid_confidence = ~df[
-    "annotator_confidence"
-].isin(
-    ALLOWED_CONFIDENCE
-)
-
-
-if invalid_confidence.any():
-
-    print(
-        "\nInvalid confidence values:"
-    )
-
-    print(
-        df.loc[
-            invalid_confidence,
-            [
-                "query_id",
-                "annotator_confidence"
-            ]
-        ]
-    )
-
-    raise ValueError(
-        "Invalid annotator confidence."
-    )
-
-
-# ==========================================
-# Validate support -> label mapping
-# ==========================================
-
-mapping_errors = []
-
-
-for index, row in df.iterrows():
-
-    expected_label = (
-        EXPECTED_LABEL_MAPPING[
-            row["context_support"]
-        ]
-    )
-
-    actual_label = (
-        row["hallucination_label"]
-    )
-
-
-    if actual_label != expected_label:
-
-        mapping_errors.append(
-            index
-        )
-
-
-if mapping_errors:
-
-    print(
-        "\nSupport/label mapping errors:"
-    )
-
-    print(
-        df.loc[
-            mapping_errors,
-            [
-                "query_id",
-                "context_support",
-                "hallucination_label"
-            ]
-        ]
-    )
-
-    raise ValueError(
-        "Hallucination label does not "
-        "match annotation rubric."
-    )
-
-
-# ==========================================
-# Check abstention consistency
-# ==========================================
-
-abstention_errors = df[
-    (df["abstained"] == True)
-    &
-    (
-        df["context_support"]
-        !=
-        "abstention"
-    )
-]
-
-
-if len(abstention_errors) > 0:
-
-    print(
-        "\nAbstention consistency errors:"
-    )
-
-    print(
-        abstention_errors[
-            [
-                "query_id",
-                "generated_answer",
-                "context_support"
-            ]
-        ]
-    )
-
-    raise ValueError(
-        "Abstained answers should use "
-        "context_support='abstention'."
-    )
-
-
-# ==========================================
-# Duplicate query check
-# ==========================================
-
-duplicate_ids = df[
-    "query_id"
-].duplicated()
-
-
-if duplicate_ids.any():
-
-    raise ValueError(
-        "Duplicate query IDs found."
-    )
-
-
-# ==========================================
-# Summary
-# ==========================================
-
-print("\n")
-print("=" * 70)
-
-print(
-    "HALLUCINATION ANNOTATION VALIDATION"
-)
-
-print("=" * 70)
-
-
-print(
-    "\nTotal annotations:"
-)
-
-print(
-    len(df)
-)
-
-
-print(
-    "\nContext-support distribution:"
-)
-
-print(
-    df[
-        "context_support"
-    ].value_counts()
-)
-
-
-print(
-    "\nHallucination labels:"
-)
-
-print(
-    df[
-        "hallucination_label"
-    ].value_counts()
-)
-
-
-print(
-    "\nHallucination rate:"
-)
-
-print(
-    df[
-        "hallucination_label"
-    ].mean()
-)
-
-
-print(
-    "\nCorrectness vs hallucination:"
-)
-
-print(
-    pd.crosstab(
-        df[
-            "correctness_status"
-        ],
-        df[
-            "hallucination_label"
-        ],
-        margins=True
-    )
-)
-
-
-print(
-    "\nAnnotator confidence:"
-)
-
-print(
-    df[
-        "annotator_confidence"
-    ].value_counts()
-)
-
-
-print("\n")
-
-print(
-    "ALL ANNOTATIONS PASSED VALIDATION!"
-)
+    print("\nSupport distribution:")
+    print(df["context_support"].value_counts())
+    print("\nConfidence distribution:")
+    print(df["annotator_confidence"].value_counts())
+    print("\nAll annotation integrity checks passed.")
+
+
+if __name__ == "__main__":
+    main()

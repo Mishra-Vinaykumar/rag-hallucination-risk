@@ -27,3 +27,8 @@ models/
 .idea/
 Thumbs.db
 .DS_Store
+
+# Generated experimental database (rebuild from data/processed CSV files)
+data/database/*.sqlite3
+data/database/*.sqlite3-shm
+data/database/*.sqlite3-wal
