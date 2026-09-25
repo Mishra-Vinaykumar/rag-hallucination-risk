@@ -1,0 +1,6 @@
+query_id,question,expected_answer,retrieval_method,rank,document_id,chunk_id,title,text,retrieval_score,is_supporting
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,Arthur's Magazine,BM25,1,D008,D008_C002,First for Women,The magazine was started in 1989.,12.807902582567303,False
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,Arthur's Magazine,BM25,2,D008,D008_C001,First for Women,First for Women is a woman's magazine published by Bauer Media Group in the USA.,11.17020317775779,True
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,Arthur's Magazine,BM25,3,D006,D006_C001,Arthur's Magazine,Arthur's Magazine (1844–1846) was an American literary periodical published in Philadelphia in the 19th century.,10.393567550925495,True
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,Arthur's Magazine,BM25,4,D008,D008_C004,First for Women,"In 2011 the circulation of the magazine was 1,310,696 copies.",9.489136531559046,False
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,Arthur's Magazine,BM25,5,D006,D006_C003,Arthur's Magazine,"In May 1846 it was merged into ""Godey's Lady's Book"".",8.995370423906365,False

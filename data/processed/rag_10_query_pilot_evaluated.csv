@@ -1,0 +1,191 @@
+query_id,question,expected_answer,question_type,difficulty,retrieval_method,top_k,hybrid_alpha,retrieval_precision,retrieval_recall,retrieval_hit,first_relevant_rank,retrieved_context,raw_generation,generated_answer,abstained,exact_match,answer_f1,correctness_status
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,Arthur's Magazine,comparison,medium,Hybrid,5,0.5,0.4,1.0,True,2.0,"[Context 1]
+Title: First for Women
+Text: The magazine was started in 1989.
+
+[Context 2]
+Title: Arthur's Magazine
+Text: Arthur's Magazine (1844–1846) was an American literary periodical published in Philadelphia in the 19th century.
+
+[Context 3]
+Title: First for Women
+Text: First for Women is a woman's magazine published by Bauer Media Group in the USA.
+
+[Context 4]
+Title: Arthur's Magazine
+Text: In May 1846 it was merged into ""Godey's Lady's Book"".
+
+[Context 5]
+Title: First for Women
+Text: In 2011 the circulation of the magazine was 1,310,696 copies.",ANSWER: First for Women,First for Women,False,0,0.0,incorrect
+5a879ab05542996e4f30887e,The Oberoi family is part of a hotel company that has a head office in what city?,Delhi,bridge,medium,Hybrid,5,0.5,0.4,1.0,True,1.0,"[Context 1]
+Title: The Oberoi Group
+Text: The Oberoi Group is a hotel company with its head office in Delhi.
+
+[Context 2]
+Title: Oberoi family
+Text: The Oberoi family is an Indian family that is famous for its involvement in hotels, namely through The Oberoi Group.
+
+[Context 3]
+Title: Ritz-Carlton Jakarta
+Text: The complex has two towers that comprises a hotel and the Airlangga Apartment respectively.
+
+[Context 4]
+Title: The Oberoi Group
+Text: Founded in 1934, the company owns and/or operates 30+ luxury hotels and two river cruise ships in six countries, primarily under its Oberoi Hotels & Resorts and Trident Hotels brands.
+
+[Context 5]
+Title: Mohan Singh Oberoi
+Text: Rai Bahadur Mohan Singh Oberoi (15 August 1898 – 3 May 2002) was an Indian hotelier, the founder and chairman of Oberoi Hotels & Resorts, India's second-largest hotel company, with 35 hotels in India, Sri Lanka, Nepal, Egypt, Australia and Hungary.",INSUFFICIENT,INSUFFICIENT,True,0,0.0,abstention
+5a8d7341554299441c6b9fe5,"Musician and satirist Allie Goertz wrote a song about the ""The Simpsons"" character Milhouse, who Matt Groening named after who?",President Richard Nixon,bridge,hard,Hybrid,5,0.5,0.2,0.25,True,1.0,"[Context 1]
+Title: Milhouse Van Houten
+Text: Milhouse Mussolini van Houten is a fictional character featured in the animated television series ""The Simpsons"", voiced by Pamela Hayden, and created by Matt Groening who named the character after President Richard Nixon's middle name.
+
+[Context 2]
+Title: Allie Goertz
+Text: Subjects of her songs have included the film ""The Room"", the character Milhouse from the television show ""The Simpsons"", and the game Dungeons & Dragons.
+
+[Context 3]
+Title: Homer Simpson
+Text: He named the character after his father, Homer Groening.
+
+[Context 4]
+Title: Marge Simpson
+Text: He named the character after his mother Margaret Groening.
+
+[Context 5]
+Title: The Simpsons: An Uncensored, Unauthorized History
+Text: The book includes entire chapters devoted to key figures such as creator Matt Groening and James L. Brooks and Sam Simon, who helped develop the series.",INSUFFICIENT,INSUFFICIENT,True,0,0.0,abstention
+5a82171f5542990a1d231f4a, What nationality was James Henry Miller's wife?,American,bridge,medium,Hybrid,5,0.5,0.0,0.0,False,,"[Context 1]
+Title: June Miller
+Text: June Miller (January 7 or 28, 1902 – February 1, 1979) was the much-written-about second wife of Henry Miller.
+
+[Context 2]
+Title: Incest: From a Journal of Love
+Text: It features Nin's relationships with writer Henry Miller, his wife June Miller, the psychoanalyst Otto Rank, her father Joaquín Nin, and her husband Hugh Parker Guiler.
+
+[Context 3]
+Title: Henry Miller Memorial Library
+Text: Henry Miller’s friend Emil White built the house that is now the Library in the mid-1960s.
+
+[Context 4]
+Title: Jim Miller (Australian footballer, born 1919)
+Text: James Henry Miller (born 30 May 1919) is a former Australian rules footballer in the Victorian Football League (VFL).
+
+[Context 5]
+Title: James Henry Deakin (junior)
+Text: James Henry Deakin (1851 – 8 November 1881) was a British Conservative politician, the son of Col. James Henry Deakin, a Manchester merchant.",INSUFFICIENT,INSUFFICIENT,True,0,0.0,abstention
+5a84dd955542997b5ce3ff79,"Cadmium Chloride is slightly soluble in this chemical, it is also called what?",alcohol,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,1.0,"[Context 1]
+Title: Cadmium chloride
+Text: It is a hygroscopic solid that is highly soluble in water and slightly soluble in alcohol.
+
+[Context 2]
+Title: Cadmium chloride
+Text: Cadmium chloride is a white crystalline compound of cadmium and chlorine, with the formula CdCl.
+
+[Context 3]
+Title: Cadmium chloride
+Text: Although it is considered to be ionic, it has considerable covalent character to its bonding.
+
+[Context 4]
+Title: Cadmium chloride
+Text: Also known are CdCl•HO and CdCl•5HO.
+
+[Context 5]
+Title: Cadmium chloride
+Text: The crystal structure of cadmium chloride (described below), composed of two-dimensional layers of ions, is a reference for describing other crystal structures.",Cadmium Chloride is called cadmium chloride.,Cadmium Chloride is called cadmium chloride.,False,0,0.0,incorrect
+5a7e36045542991319bc9440,"Which tennis player won more Grand Slam titles, Henri Leconte or Jonathan Stark?",Jonathan Stark,comparison,medium,Hybrid,5,0.5,0.4,0.6666666666666666,True,1.0,"[Context 1]
+Title: Jonathan Stark (tennis)
+Text: Jonathan Stark (born April 3, 1971) is a former professional tennis player from the United States.
+
+[Context 2]
+Title: Henri Leconte
+Text: Henri Leconte (born 4 July 1963) is a former French professional tennis player.
+
+[Context 3]
+Title: Jonathan Stark (tennis)
+Text: During his career he won two Grand Slam doubles titles (the 1994 French Open Men's Doubles and the 1995 Wimbledon Championships Mixed Doubles).
+
+[Context 4]
+Title: Jonathan Stark (tennis)
+Text: Stark reached the World No. 1 doubles ranking in 1994.
+
+[Context 5]
+Title: Henri Leconte
+Text: Leconte's career-high singles ranking was world No. 5.",ANSWER: Jonathan Stark,Jonathan Stark,False,1,1.0,correct
+5adf44985542993a75d2646d,Which genus of moth in the world's seventh-largest country contains only one species?,Crambidae,bridge,hard,Hybrid,5,0.5,0.0,0.0,False,,"[Context 1]
+Title: Nymphuliella
+Text: It contains only one species, Nymphuliella daeckealis, the China Mark Moth, which is found from New Jersey south to Florida and west to Colorado.
+
+[Context 2]
+Title: Geography of India
+Text: It is the seventh-largest country in the world, with a total area of 3287263 km2 .
+
+[Context 3]
+Title: Eumacaria
+Text: It contains only one species, Eumacaria madopata, the brown-bordered geometer moth, which is found in North America, where it has been recorded from British Columbia, northern Washington, southern Saskatchewan, from Maine to Florida, South Dakota, North Dakota, Nebraska, Wyoming, Idaho, Colorado and New Mexico.
+
+[Context 4]
+Title: Nepita
+Text: The genus consists of only one species, Nepita conferta, which can be found in India and Sri Lanka.
+
+[Context 5]
+Title: Eutrapela
+Text: It contains only one species, Eutrapela clemataria, the curve-toothed geometer moth or purplish-brown looper, which is found in North America, where it has been recorded from Nova Scotia to Florida, west to Texas and north to Saskatchewan.",ANSWER: Nepita,Nepita,False,0,0.0,incorrect
+5a832c3455429954d2e2ec41,"Who was once considered the best kick boxer in the world, however he has been involved in a number of controversies relating to his ""unsportsmanlike conducts"" in the sport and crimes of violence outside of the ring.",Badr Hari,bridge,easy,Hybrid,5,0.5,0.6,0.75,True,1.0,"[Context 1]
+Title: Badr Hari
+Text: Hari has been a prominent figure in the world of kickboxing and was once considered the best kickboxer in the world, however he has been involved in a number of controversies relating to his ""unsportsmanlike conducts"" in the sport and crimes of violence outside of the ring.
+
+[Context 2]
+Title: Global Fighting Championship
+Text: It was considered as one of the biggest kickboxing and MMA promotion in Middle East.
+
+[Context 3]
+Title: Betting controversies in cricket
+Text: Cricket has had a number of controversies relating to players being involved with the betting aspects of the game.
+
+[Context 4]
+Title: Triplemanía VII
+Text: In the semi-main event Heavy Metal and El Felino defended the hair of their father, referee Pepe ""Tropi"" Casas while Kick Boxer and Thai Boxer defended the hair of referee El Tirantes.
+
+[Context 5]
+Title: Badr Hari
+Text: Badr Hari (Arabic: بدر هاري‎ ‎ ; born 8 December 1984) is a Moroccan-Dutch super heavyweight kickboxer from Amsterdam, fighting out of Mike's Gym in Oostzaan.",ANSWER: Badr Hari,Badr Hari,False,1,1.0,correct
+5a7d0db955429909bec76924,"The Dutch-Belgian television series that ""House of Anubis"" was based on first aired in what year?",2006,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,1.0,"[Context 1]
+Title: House of Anubis
+Text: House of Anubis is a mystery television series developed for Nickelodeon based on the Dutch-Belgian television series ""Het Huis Anubis"".
+
+[Context 2]
+Title: Het Huis Anubis
+Text: Het Huis Anubis (""The House of Anubis"") is a Belgian-Dutch children's television drama created by Studio 100 and Nickelodeon, airing in the Netherlands and Flanders.
+
+[Context 3]
+Title: House of Anubis
+Text: The series was created by Hans Bourlon and Gert Verhulst and premiered on Nickelodeon on 1 January 2011 in the United States and on 25 February 2011 in the United Kingdom.
+
+[Context 4]
+Title: House of Anubis
+Text: The series is the first series from the network to be filmed outside the United States and the first telenovela-format series for the network.
+
+[Context 5]
+Title: Das Haus Anubis
+Text: Das Haus Anubis is a television program produced jointly by Belgian broadcaster Studio 100 and Nickelodeon and the first remake of Het Huis Anubis aired in The Netherlands and Belgium.",INSUFFICIENT,INSUFFICIENT,True,0,0.0,abstention
+5a89372855429951533612e6,What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?,6.213 km long,bridge,hard,Hybrid,5,0.5,0.2,0.25,True,1.0,"[Context 1]
+Title: 2013 Liqui Moly Bathurst 12 Hour
+Text: The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 10 February 2013, was the eleventh running of the Bathurst 12 Hour.
+
+[Context 2]
+Title: 2013 Liqui Moly Bathurst 12 Hour
+Text: The race also incorporated the opening round of the 2013 Australian GT Championship.
+
+[Context 3]
+Title: 2015 Liqui Moly Bathurst 12 Hour
+Text: The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 8 February 2015, was the thirteenth running of the Bathurst 12 Hour.
+
+[Context 4]
+Title: 2016 Liqui Moly Bathurst 12 Hour
+Text: The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 7 February 2016, was the fourteenth running of the Bathurst 12 Hour.
+
+[Context 5]
+Title: 2014 Liqui Moly Bathurst 12 Hour
+Text: The event, which was staged at the Mount Panorama Circuit, near Bathurst, in New South Wales, Australia on 9 February 2014, was the twelfth running of the Bathurst 12 Hour.",INSUFFICIENT,INSUFFICIENT,True,0,0.0,abstention

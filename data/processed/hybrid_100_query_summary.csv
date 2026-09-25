@@ -1,0 +1,101 @@
+query_id,question,question_type,difficulty,retrieval_method,alpha,top_k,total_gold_chunks,gold_chunks_retrieved,precision_at_5,recall_at_5,hit_at_5,first_relevant_rank
+5a7a06935542990198eaf050,Which magazine was started first Arthur's Magazine or First for Women?,comparison,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5a879ab05542996e4f30887e,The Oberoi family is part of a hotel company that has a head office in what city?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a8d7341554299441c6b9fe5,"Musician and satirist Allie Goertz wrote a song about the ""The Simpsons"" character Milhouse, who Matt Groening named after who?",bridge,hard,Hybrid,0.5,5,4,1,0.2,0.25,True,1.0
+5a82171f5542990a1d231f4a, What nationality was James Henry Miller's wife?,bridge,medium,Hybrid,0.5,5,3,0,0.0,0.0,False,
+5a84dd955542997b5ce3ff79,"Cadmium Chloride is slightly soluble in this chemical, it is also called what?",bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a7e36045542991319bc9440,"Which tennis player won more Grand Slam titles, Henri Leconte or Jonathan Stark?",comparison,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5adf44985542993a75d2646d,Which genus of moth in the world's seventh-largest country contains only one species?,bridge,hard,Hybrid,0.5,5,4,0,0.0,0.0,False,
+5a832c3455429954d2e2ec41,"Who was once considered the best kick boxer in the world, however he has been involved in a number of controversies relating to his ""unsportsmanlike conducts"" in the sport and crimes of violence outside of the ring.",bridge,easy,Hybrid,0.5,5,4,3,0.6,0.75,True,1.0
+5a7d0db955429909bec76924,"The Dutch-Belgian television series that ""House of Anubis"" was based on first aired in what year?",bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a89372855429951533612e6,What is the length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged?,bridge,hard,Hybrid,0.5,5,4,1,0.2,0.25,True,1.0
+5abd90545542996e802b47d7,"Fast Cars, Danger, Fire and Knives includes guest appearances from which hip hop record executive?",bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,2.0
+5aba66c855429939ce03dcdb,"Gunmen from Laredo starred which narrator of ""Frontier""?",bridge,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a7722d655429966f1a36c99,Where did the form of music played by Die Rhöner Säuwäntzt originate?,bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ade025e5542997dc790711e,In which American football game was Malcolm Smith named Most Valuable player?,bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ab381b155429969a97a816b,"What U.S Highway gives access to Zilpo Road, and is also known as Midland Trail?",bridge,hard,Hybrid,0.5,5,2,1,0.2,0.5,True,3.0
+5ae0d91e55429924de1b7198,"The 1988 American comedy film, The Great Outdoors, starred a four-time Academy Award nominee, who received a star on the Hollywood Walk of Fame in what year?",bridge,medium,Hybrid,0.5,5,5,3,0.6,0.6,True,1.0
+5ac2a5d455429921a00ab01b,What are the names of the current members of  American heavy metal band who wrote the music for  Hurt Locker The Musical? ,bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5adc1309554299438c868d3b,"Human Error"" is the season finale of the third season of a tv show that aired on what network?",bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a83168855429966c78a6b2e,"Dua Lipa, an English singer, songwriter and model, the album spawned the number-one single ""New Rules"" is a song by English singer Dua Lipa from her eponymous debut studio album, released in what year?",bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ab698885542995eadef002a,"American politician Joe Heck ran unsuccessfully against Democrat Catherine Cortez Masto, a woman who previously served as the 32nd Attorney General of where?",bridge,easy,Hybrid,0.5,5,3,3,0.6,1.0,True,1.0
+5ab345db55429969a97a8122,"Which state does the drug stores, of which the CEO is Warren Bryant, are located?",bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5adf732a5542993a75d264e9,Which  American politician did Donahue replaced ,bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,5.0
+5ac2a912554299218029dae8,"Which band was founded first, Hole, the rock band that Courtney Love was a frontwoman of, or The Wolfhounds?",comparison,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a7272eb5542997f827839d7,How old is the female main protagonist of Catching Fire?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,3.0
+5ac2c3545542990b17b1548b,Chang Ucchin was born in korea during a time that ended with the conclusion of what? ,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ae3b4d05542992f92d82349,Who is the director of the 2003 film which has scenes in it filmed at the Quality Cafe in Los Angeles?,bridge,hard,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,3.0
+5a76a401554299373536012b,"New Faces of 1952 is a musical revue with songs and comedy skits, it helped jump start the career of which young performer, and American actress?",bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,2.0
+5ae3918b5542994393b9e709,Were Pavel Urysohn and Leonid Levin known for the same type of work?,comparison,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a8efd3c55429918e830d179,Are both The New Pornographers and Kings of Leon American rock bands?,comparison,hard,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a8b63755542997f31a41cfe,"750 7th Avenue and 101 Park Avenue, are located in which city?",comparison,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ac15df95542994d76dccded,"Which actress played the part of fictitious character Kimberly Ann Hart, in the franchise built around a live action superhero television series taking much of its footage from the Japanese tokusatsu 'Super Sentai'?",bridge,easy,Hybrid,0.5,5,4,4,0.8,1.0,True,1.0
+5a7a02235542996c55b2dcd3,"Who was born first, Pablo Trapero or Aleksander Ford?",comparison,hard,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ac061ab554299294b218fac,Are Jane and First for Women both women's magazines?,comparison,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ab5a2f85542997d4ad1f197,What profession does Nicholas Ray and Elia Kazan have in common?,comparison,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5abd7ca05542993062266cab,Where is the company that purchased Aixam based in?,bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,2.0
+5a8ce5c7554299441c6b9f64,"Which documentary is about Finnish rock groups, Adam Clayton Powell or The Saimaa Gesture?",comparison,medium,Hybrid,0.5,5,3,3,0.6,1.0,True,1.0
+5a81ff1d554299676cceb1c3,"Who was inducted into the Rock and Roll Hall of Fame, David Lee Roth or Cia Berg?",comparison,medium,Hybrid,0.5,5,4,2,0.4,0.5,True,1.0
+5ae732685542991e8301cbc3,Zimbabwe's Guwe Secondary School has a sister school in what New York cunty?,bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a8a2ebc5542996c9b8d5e33,"The Royal Commission into Drug Trafficking (1977–1979) or Woodward Royal Commission was a royal commission initiated by the New South Wales Government to investigate drug trafficking in New South Wales, Australia, especially links between the New South Wales Police and Mafia, The Honoured Society, is a Calabrian 'Ndrangheta criminal confederation, started in Melbourne and currently active in all of which country?  ",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5add28c85542992ae4cec4be,"The 337th Flight Test Squadron (337 FLTS) was most recently part of the 46th Test Wing and based at McClellan Air Force Base, a former United States Air Force base located in the North Highlands area of Sacramento County, in which US state?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a7d90195542991319bc93cf,The axial turbojet Pirna 014 was designed by engineers from this German aircraft and aircraft engine manufacturer based in which city?,bridge,medium,Hybrid,0.5,5,3,1,0.2,0.3333333333333333,True,1.0
+5abe3f9455429976d4830aaa,"Which faith is designated to the University of Providence, private university accredited by the NW association of Schools and Colleges and located in a third largest city in Montana after being passed by Missoula? ",bridge,easy,Hybrid,0.5,5,5,2,0.4,0.4,True,1.0
+5abee5e25542994516f45473,Pauline Henry was known as the vocalist of a very popular cover song. Which album was this song from?,bridge,medium,Hybrid,0.5,5,4,2,0.4,0.5,True,1.0
+5ae78ec5554299540e5a5605,Guitars for Wounded Warriors is an album that was recorded in the village in which New York county?,bridge,hard,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a760a5f554299109176e629,"What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song ""The Battle?""",bridge,medium,Hybrid,0.5,5,3,3,0.6,1.0,True,1.0
+5a7a52745542996c55b2dd4f,"Who was born first, Francis Nethersole or Elizabeth Stuart?",bridge,hard,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ac1f7f355429964131be2ae,What does the Hacker-Pschorr Brewery have to limit in order to comply with German regulations?,bridge,hard,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a74248855429929fddd83e5,"Don Barry Mason was the founder of the Psychedelic Shamanistic Institute (PSI), which other member that's Welsh, that died on 10 April 2016?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5abd04f15542996e802b467e,What male actor starred in The Messenger?,bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ac3ad225542995ef918c1da,Are Gin and tonic and Paloma both cocktails based on tequila?,comparison,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a736bfa5542991f29ee2e03,Who is older Glenn Hughes or Ross Lynch?,comparison,hard,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5addfe6c5542997dc790710e,"In what year was the creator of the current arrangement of the ""Simpson's Theme"" born?",bridge,hard,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a7a0a965542996c55b2dce7,The Southern Railway runs from Vienna to Graz and the border with Slovenia at Spielfeld via the first mountain railway built in Europe to use what kind of track?,bridge,hard,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a8ae49155429951533613a3,In what show did Cynthia Nixon receive the 2004 Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series and a Screen Actors Guild Award for her performance?,bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a74bdbf5542996c70cfadc7,"Lee Jun-fan played what character in ""The Green Hornet"" television series?",bridge,medium,Hybrid,0.5,5,3,1,0.2,0.3333333333333333,True,2.0
+5ab99943554299131ca42391,"The 1895/96 Football League season was the eighth in Football League history with Everton, their Goodison Park home, is a football stadium located in Walton, Liverpool, in which country?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a8195f35542995ce29dcc0c,"A Head Full of Dreams Tour is the seventh tour by Coldplay, and which had it's first show at a stadium that is known as Estadio Unico and is owned by who?",bridge,medium,Hybrid,0.5,5,3,3,0.6,1.0,True,1.0
+5ab70446554299110f219a94,"Roger Avary (born August 23, 1965) is a Canadian film and television producer, screenwriter and director in the American mass media industry, he wrote the screenplay for Beowulf, a 2007 British-American 3D motion capture epic fantasy film, directed by who?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5adbe1e755429947ff173853,"The American Pre-Code comedy film featuring an American actress, dancer, and singer, widely known for performing in films and RKO's musical films, was released in what year?",bridge,medium,Hybrid,0.5,5,3,1,0.2,0.3333333333333333,True,1.0
+5a904e725542995651fb5118,"An edited version of ""Just the Two of Us"" reached number two on the ""Billboard"" Hot 100 behind a song written and composed by Donna Weiss and Jackie DeShannon which spend how many weeks at No. 1 on the ""Billboard"" hot 100?",bridge,medium,Hybrid,0.5,5,4,3,0.6,0.75,True,1.0
+5a7daae35542990b8f503a1d,"Which band has more members, Saint Motel or Curve?",comparison,hard,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5ae6038155429929b0807a55,"""Funnybot"" is the second episode of the fifteenth season of which American animated television series, created by Trey Parker and Matt Stone?  ",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,3.0
+5a71458e5542994082a3e738,"Which private research university is located in Chestnut Hill, Massachusetts Boston College or Stanford University? ",comparison,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a73332b5542992359bc3287,"What American stage, film, and television actor  who also appeared in a large number of musicals, played Samson in the 1949 film ""Samson and Delilah"".",bridge,easy,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,2.0
+5ae500fd55429908b63264d8,Iqaluit Airport and Canadian North are based out of what country?,bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,2.0
+5ab292e4554299545a2cf993,In what political party was the man who officially opened he Royal Spa Centre in 1972?,bridge,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a8514545542992a431d1ad2,Which Oscar-nominated film was written by the screenwriter who wrote a 1991 romantic drama based upon a screenplay by Sooni Taraporevala?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5ae3345f55429928c4239682,Are both Tim McIlrath and Spike Slawson American punk rock musicians?,comparison,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ac1b48f55429963665198f3,"The Golden Globe Award winner for best actor from ""Roseanne"" starred along what actress in Gigantic?",bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ab9d58855429939ce03dc3a,"The expert mentor to the celebrities that perform on ""Splash!"" won the 2009 FINA World Championionship in the individual event at what age? ",bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ab9121555429919ba4e238a,"Still Da Baddest is the fourth studio album by American rapper Trina, following the poor chart performance, ""I Got a Thang for You"" featuring which American singer/songwriter, record producer, business woman, and television personality, and was born in Oakland, California?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5abf037a5542993fe9a41dbe,What profession does Am Rong and Alexandre Rockwell have in common?,comparison,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ab3ed12554299753aec59f3,El Nuevo Cojo and Golf Magazine are both special interest publications but which one is owned by Time Inc?,comparison,medium,Hybrid,0.5,5,3,1,0.2,0.3333333333333333,True,1.0
+5abcfc3b554299114383a1ad,Who funds the bowling team that includes the school bus driver for Springfield Elementary School?,bridge,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a74f2ff5542993748c89748,What city are George Washington University Hospital and MedStar Washington Hospital Center located in?,comparison,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,2.0
+5ac52b495542994611c8b3de,what is the connection between Peter O'Meara and Norman Dike?,bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5a72b1c25542992359bc3172,"What author has contributed to such works as ""New Statesmen"", ""The Nation"", and ""The Atlantic"", among others, while also being being associated with Dysteleology?",bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5a72a00d5542991f9a20c53c,Who developed the prototype pacemaker used by the 34th President of the USA?,bridge,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a8fa73e5542992414482b22,Which publishing company has published Bizarre and a sister publication devoted to the anomalous phenomena popularised by Charles Fort?,bridge,medium,Hybrid,0.5,5,4,3,0.6,0.75,True,1.0
+5a8dfbeb5542995085b3736e,"Who performed the lead single on the album Friends in Low Places, No Fences, that reached #1 on Billboard?",bridge,medium,Hybrid,0.5,5,3,3,0.6,1.0,True,1.0
+5ab39701554299233954ff5e,Hate to Feel is the tenth track on what Alice in Chains' album that peaked as number six on the Billboard 200?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ab6ad2855429953192ad35e,"The lead singer and guitarist in the Portland, Oregon rock band consisting of John Gourley, Zach Carothers, Kyle O'Quin, Jason Sechrist and Eric Howk, goes by what alias?",bridge,medium,Hybrid,0.5,5,4,2,0.4,0.5,True,1.0
+5adf8d5b5542995534e8c7e1,What year was the winner of the 2016 Marrakesh ePrix born?,bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,3.0
+5ae5b3df5542992663a4f20b,"South Korean actor Kim Yool-ho starred in what 2016 movie directed by Yeon Sang-ho Yeon Sang-ho and starring actors Gong Yoo, Jung Yu-mi, and Ma Dong-seok?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ac2423755429951e9e684ff,According to the 2006 census what is the population of the city in which James Iroha Uchechukwu was born ?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a822d4655429926c1cdae45,What actor in the film D.C. Cab also had a role in the TV series Barney Miller?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5ab9672655429970cfb8eabd,Which industry do Richard Hawley and Chicago's Catherine belong to? ,comparison,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5abb1f745542996cc5e49fb5,Are Pam Veasey and Jon Jost both American?,comparison,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5abbbd0f55429931dba144d5,Maurice Hines and his brother were famous for what?,bridge,hard,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5ac3e8c65542997ea680c993,Are the New Orleans Outfall Canals the same length as the Augusta Canal?,comparison,hard,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a87390555429960ec39b769,In which stadium do the teams owned by Myra Kraft's husband play?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a8766cb5542996e4f3087d6,What southern California based band covered Blue Öyster Cult's Godzilla?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,2.0
+5a7ca54c55429935c91b527f,"The Swedish-British entertainment studio executive and film executive producer, who was the Executive producer for a 2016 American action thriller film directed by Babak Najafi, currently serve?",bridge,easy,Hybrid,0.5,5,2,2,0.4,1.0,True,3.0
+5a90c2b35542995651fb51df,"an Emmy Award winner and two-time Tony Award winner, was on the episode 15 of the third season of ""Chuck"". what is her name ?",bridge,easy,Hybrid,0.5,5,2,1,0.2,0.5,True,3.0
+5ae0fa8b5542997b2ef7d0c6,"What is the current name of the Atlanta Mansion built for the daughter of the 41st Mayor of Atlanta, Georgia?",bridge,medium,Hybrid,0.5,5,3,2,0.4,0.6666666666666666,True,1.0
+5a74a3bd55429979e28829da,Who invented the type of script used in autographs?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5a8f938a55429918e830d275,Approximately what percentage of the global population is made up of the ethnic group Princess Fragrant was produced to improve relations with?,bridge,medium,Hybrid,0.5,5,3,3,0.6,1.0,True,1.0
+5add3b665542997545bbbcd2,The Boren-McCurdy proposals were partially brought about by which Oklahoma politician in 1992?,bridge,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0
+5ab728e45542992aa3b8c7b4,The Thoen Stone is on display at a museum in what county?,bridge,medium,Hybrid,0.5,5,2,1,0.2,0.5,True,1.0
+5a74fbe55542996c70cfae63,"Is Children's National Medical Center or MedStar Washington Hospital Center the largest private hospital in Washington, D.C.?",comparison,medium,Hybrid,0.5,5,2,2,0.4,1.0,True,1.0

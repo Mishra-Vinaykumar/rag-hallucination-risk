@@ -1,0 +1,951 @@
+query_id,question,expected_answer,question_type,difficulty,retrieval_method,top_k,hybrid_alpha,retrieval_precision,retrieval_recall,retrieval_hit,first_relevant_rank,retrieved_context,raw_generation,generated_answer,abstained
+5abd90545542996e802b47d7,"Fast Cars, Danger, Fire and Knives includes guest appearances from which hip hop record executive?",Jaime Meline,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,2,"[Context 1]
+Title: Fast Cars, Danger, Fire and Knives
+Text: Fast Cars, Danger, Fire and Knives is an EP by American hip hop artist Aesop Rock.
+
+[Context 2]
+Title: Fast Cars, Danger, Fire and Knives
+Text: Vocals are handled by Aesop Rock, with guest appearances from Camu Tao and Metro of S.A. Smash and Definitive Jux label head El-P.
+
+[Context 3]
+Title: Fast Cars, Danger, Fire and Knives
+Text: All scratches are performed by DJ Big Wiz.
+
+[Context 4]
+Title: Fast Cars, Danger, Fire and Knives
+Text: Released via the Definitive Jux label on February 22, 2005, the record is produced by Blockhead and Aesop Rock himself, with the former producing three tracks and the latter producing four, with one track produced by Rob Sonic.
+
+[Context 5]
+Title: Longterm Mentality
+Text: The album features guest appearances from Jhené Aiko, Schoolboy Q, Kendrick Lamar, Punch, Alori Joh, JaVonté, MURS, BJ the Chicago Kid and Pat Brown, with the production from American hip hop record producers such as Tae Beast, Ayiro, Sounwave, AAyhasis, Context, Alexis Carrington and Tommy Black.",INSUFFICIENT,INSUFFICIENT,True
+5aba66c855429939ce03dcdb,"Gunmen from Laredo starred which narrator of ""Frontier""?",Walter Darwin Coy,bridge,medium,Hybrid,5,0.5,0.4,0.6666666666666666,True,1,"[Context 1]
+Title: Gunmen from Laredo
+Text: Gunmen from Laredo is a 1959 American western film produced and directed by Wallace MacDonald, which stars Robert Knapp, Maureen Hingert, and Walter Coy.
+
+[Context 2]
+Title: Frontier Texas!
+Text: The narrator in the theater is actor-artist Buck Taylor from Fort Worth.
+
+[Context 3]
+Title: Walter Coy
+Text: He was best known for narrating the NBC western anthology series, ""Frontier"", which aired early Sunday evenings in the 1955–1956 season.
+
+[Context 4]
+Title: Frontier Texas!
+Text: Visitors see depictions of buffalo hunters, Comanche warriors, explorers, and pioneers in the theatre called the ""Century of Adventure"", 1780-1880.
+
+[Context 5]
+Title: Frontier Texas!
+Text: Frontier Texas!",ANSWER: Maureen Hingert,Maureen Hingert,False
+5a7722d655429966f1a36c99,Where did the form of music played by Die Rhöner Säuwäntzt originate?,United States,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Die Rhöner Säuwäntzt
+Text: Die Rhöner Säuwäntzt are a Skiffle-Bluesband from Eichenzell-Lütter in Hessen, Germany.
+
+[Context 2]
+Title: Die Rhöner Säuwäntzt
+Text: The expression ""Säuwäntzt"" means pork belly and refers also to untidy or unruly children and youth.
+
+[Context 3]
+Title: Die Rhöner Säuwäntzt
+Text: The line-up consists of Martin Caba, Christoph Günther and Christoph Leipold playing Skiffle-Blues with lyrics based on Rhön Mountains dialect and other Hessian dialects varieties.
+
+[Context 4]
+Title: Bubu music
+Text: In its folk form, the music is played by blowing on bamboo cane flutes and on metal pipes -often repurposed auto parts.
+
+[Context 5]
+Title: Kantrum
+Text: Kantrum (Thai กันตรึม) is a type of folk music played by the Khmer in Isan, Thailand, living near the border with Cambodia.",INSUFFICIENT,INSUFFICIENT,True
+5ade025e5542997dc790711e,In which American football game was Malcolm Smith named Most Valuable player?,Super Bowl XLVIII,bridge,easy,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Malcolm Smith (American football)
+Text: Smith was named the Most Valuable Player of Super Bowl XLVIII after they defeated the Denver Broncos.
+
+[Context 2]
+Title: Malcolm Smith (American football)
+Text: Smith played college football at USC.
+
+[Context 3]
+Title: Steve Clark (American football)
+Text: He also played on two state championship teams in high school which were a combined (25-1) over two years and was a five team all-American including ""Parade Magazine"", he was also named Most Valuable Player of the state of Utah.
+
+[Context 4]
+Title: Malcolm Smith (American football)
+Text: Malcolm Xavier Smith (born July 5, 1989) is an American football linebacker for the San Francisco 49ers of the National Football League (NFL).
+
+[Context 5]
+Title: Malcolm Smith (American football)
+Text: He was drafted by the Seattle Seahawks in the seventh round of the 2011 NFL Draft.",ANSWER: Super Bowl XLVIII,Super Bowl XLVIII,False
+5ab381b155429969a97a816b,"What U.S Highway gives access to Zilpo Road, and is also known as Midland Trail?",US 60,bridge,hard,Hybrid,5,0.5,0.2,0.5,True,3,"[Context 1]
+Title: Glen Ferris, West Virginia
+Text: The sole highway linking Glen Ferris to the area is U.S. Route 60, known also as the Midland Trail.
+
+[Context 2]
+Title: Peterman Hill
+Text: The road was originally known as Midland Trail and later U.S. 60 alternate until 1964 when it reverted to county maintenance.
+
+[Context 3]
+Title: Zilpo Road
+Text: The nine mile byway starts south of Morehead, Kentucky and can be accessed by U.S. Highway 60.
+
+[Context 4]
+Title: Hawks Nest, West Virginia
+Text: In modern times, the Midland Trail carries U.S. Route 60 through the same general route.
+
+[Context 5]
+Title: Zilpo Road
+Text: Zilpo Road is a National Forest Scenic Byway in the forested hills of eastern Kentucky, United States.",U.S. Route 60,U.S. Route 60,False
+5ae0d91e55429924de1b7198,"The 1988 American comedy film, The Great Outdoors, starred a four-time Academy Award nominee, who received a star on the Hollywood Walk of Fame in what year?",2006,bridge,medium,Hybrid,5,0.5,0.6,0.6,True,1,"[Context 1]
+Title: The Great Outdoors (film)
+Text: The Great Outdoors is a 1988 American comedy film directed by Howard Deutch, and written and produced by John Hughes.
+
+[Context 2]
+Title: The Great Outdoors (film)
+Text: It stars Dan Aykroyd, John Candy, Stephanie Faracy and Annette Bening in her film debut.
+
+[Context 3]
+Title: Annette Bening
+Text: In 2006, she received a star on the Hollywood Walk of Fame.
+
+[Context 4]
+Title: Kevin Bacon
+Text: In 2003, Bacon received a star on the Hollywood Walk of Fame for his contributions to the motion pictures industry.
+
+[Context 5]
+Title: John Lithgow
+Text: Lithgow has received a star on the Hollywood Walk of Fame and has been inducted into the American Theater Hall of Fame.",ANSWER: 2006,2006,False
+5ac2a5d455429921a00ab01b,What are the names of the current members of  American heavy metal band who wrote the music for  Hurt Locker The Musical? ,"Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.",bridge,easy,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Hurt Locker (musical)
+Text: The Playbills, which describe the musical as having ""explosions, negligible storytelling, camouflage and tits"", also state that the musical's cast included actors such as Taye Diggs (who would go on to play the role of Hedwig in the summer of 2015) and that the music was written by Metallica and Stephen R. Schwartz, which is the real name of ""Hedwig"" songwriter Stephen Trask.
+
+[Context 2]
+Title: Hurt Locker (musical)
+Text: Hurt Locker The Musical is a fictional musical in the 2014 Broadway premiere production of ""Hedwig and the Angry Inch"".
+
+[Context 3]
+Title: Hurt Locker (musical)
+Text: Fake Playbills for the musical are used as props and are found scattered on the floor of the Belasco Theatre and contains advertisements for other fake musicals based on feature films such as ""Gravity on Ice"", ""Container Store: The Musical"", ""The Entire Bible"", and ""SoulCycle on Broadway"".
+
+[Context 4]
+Title: Hurt Locker (musical)
+Text: In the Broadway performance of ""Hedwig and the Angry Inch"" the musical opens with Hedwig explaining that the musical only ran for a single night before closing during intermission, and that she has convinced a producer to let her perform in what would otherwise be an empty stage.
+
+[Context 5]
+Title: Metallica
+Text: Guitarist Dave Mustaine (who went on to form Megadeth) and bassists Ron McGovney, Cliff Burton, and Jason Newsted are also former members of the band.",INSUFFICIENT,INSUFFICIENT,True
+5adc1309554299438c868d3b,"Human Error"" is the season finale of the third season of a tv show that aired on what network?",Fox,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Human Error (House)
+Text: ""Human Error"" is the twenty-fourth episode and season finale of the third season of ""House"" and the seventieth episode overall.
+
+[Context 2]
+Title: Robert Chase
+Text: Chase has been attracted to Allison Cameron since the beginning of the show and embarks on a romantic relationship with her in ""Human Error.""
+
+[Context 3]
+Title: Through the Looking Glass (Lost)
+Text: ""Through the Looking Glass"" is the third season finale of the ABC television series ""Lost"", consisting of the 22nd and 23rd episodes of the third season.
+
+[Context 4]
+Title: My Finale
+Text: As the show underwent many changes for the ninth and final season, this is the last episode in which all of the main cast appear as series regulars.
+
+[Context 5]
+Title: My Finale
+Text: The show ended up returning for a ninth season.",INSUFFICIENT,INSUFFICIENT,True
+5a83168855429966c78a6b2e,"Dua Lipa, an English singer, songwriter and model, the album spawned the number-one single ""New Rules"" is a song by English singer Dua Lipa from her eponymous debut studio album, released in what year?",2017,bridge,easy,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: New Rules (song)
+Text: ""New Rules"" is a song by English singer Dua Lipa from her eponymous debut studio album (2017).
+
+[Context 2]
+Title: Dua Lipa
+Text: Dua Lipa ( ; ] ; born 22 August 1995) is an English singer, songwriter and model.
+
+[Context 3]
+Title: Dua Lipa
+Text: The album spawned seven singles, including the top-10 single ""Be the One"" and the number-one single ""New Rules"".
+
+[Context 4]
+Title: Be the One (Dua Lipa song)
+Text: ""Be the One"" is a song by English singer Dua Lipa from her eponymous debut studio album (2017).
+
+[Context 5]
+Title: Dua Lipa (album)
+Text: Dua Lipa is the debut studio album by English singer Dua Lipa.",2017,2017,False
+5ab698885542995eadef002a,"American politician Joe Heck ran unsuccessfully against Democrat Catherine Cortez Masto, a woman who previously served as the 32nd Attorney General of where?",Nevada,bridge,easy,Hybrid,5,0.5,0.6,1.0,True,1,"[Context 1]
+Title: Joe Heck
+Text: He ran unsuccessfully against Democrat Catherine Cortez Masto in the general election for the open Nevada United States Senate seat in 2016.
+
+[Context 2]
+Title: Catherine Cortez Masto
+Text: She previously served as the 32nd Attorney General of Nevada from 2007 to 2015.
+
+[Context 3]
+Title: Catherine Cortez Masto
+Text: Catherine Marie Cortez Masto (born March 29, 1964) is an American attorney and politician who is the junior United States Senator from Nevada.
+
+[Context 4]
+Title: Catherine Cortez Masto
+Text: She is a member of the Democratic Party.
+
+[Context 5]
+Title: Joe Heck
+Text: Joseph John “Joe” Heck (born October 30, 1961) is an American politician, physician, and U.S. Army Brigadier General who had served as the U.S. Representative for Nevada's 3rd congressional district from 2011 to 2017.",INSUFFICIENT,INSUFFICIENT,True
+5ab345db55429969a97a8122,"Which state does the drug stores, of which the CEO is Warren Bryant, are located?",Hawaii,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Warren Bryant
+Text: Warren Bryant was the CEO of Longs Drugs Store Corporation out of California prior to the retail chain's acquisition by CVS/Caremark.
+
+[Context 2]
+Title: Leader Drug Stores
+Text: It has a business affiliation with Cardinal Health, which sponsors the network and owns the name ""Leader Drug Stores"".
+
+[Context 3]
+Title: Warren Bryant
+Text: He is also a director of OfficeMax Incorporated.
+
+[Context 4]
+Title: Warren Bryant
+Text: , a retail grocery chain, from 1999 to 2002.
+
+[Context 5]
+Title: USA Drug
+Text: Its headquarters are still located in Pine Bluff with additional offices in Little Rock, Arkansas, Tulsa, Oklahoma, and Memphis, Tennessee.",INSUFFICIENT,INSUFFICIENT,True
+5adf732a5542993a75d264e9,Which  American politician did Donahue replaced ,Kelli Ward,bridge,easy,Hybrid,5,0.5,0.2,0.5,True,5,"[Context 1]
+Title: Sue Donahue
+Text: Donahue did not run for re-election in 2016 and was replaced by Sonny Borrelli.
+
+[Context 2]
+Title: Sue Donahue
+Text: Sue Donahue is an American politician.
+
+[Context 3]
+Title: Dan Donahue
+Text: Daniel M. Donahue is an American politician serving in the Massachusetts House of Representatives since September 2013.
+
+[Context 4]
+Title: Anne Donahue
+Text: Anne de la Blanchetai Donahue is an American politician from the state of Vermont.
+
+[Context 5]
+Title: Sue Donahue
+Text: Donahue replaced Kelli Ward who resigned to run for the United States Senate.",ANSWER: Kelli Ward,Kelli Ward,False
+5ac2a912554299218029dae8,"Which band was founded first, Hole, the rock band that Courtney Love was a frontwoman of, or The Wolfhounds?",The Wolfhounds,comparison,medium,Hybrid,5,0.5,0.4,0.6666666666666666,True,1,"[Context 1]
+Title: Courtney Love
+Text: She rose to prominence as the frontwoman of the alternative rock band Hole, which she formed in 1989.
+
+[Context 2]
+Title: Courtney Love
+Text: Prolific in the punk and grunge scenes of the 1990s, Love has enjoyed a career that spans four decades.
+
+[Context 3]
+Title: The Wolfhounds
+Text: The Wolfhounds are an indie pop/noise pop band formed in Romford, UK in 1985 by Dave Callahan, Paul Clark, Andy Golding, Andy Bolton and Frank Stebbing, and originally active until 1990.
+
+[Context 4]
+Title: The Wolfhounds
+Text: The band reformed in 2005 and continues to write, record and play live, releasing new albums in 2014 and 2016.
+
+[Context 5]
+Title: Turpentine (song)
+Text: The song was one of the band's first compositions and remained unreleased for seven years before being released on the band's second EP, ""The First Session"" on August 26, 1997.",Hole,Hole,False
+5a7272eb5542997f827839d7,How old is the female main protagonist of Catching Fire?,16-year-old,bridge,medium,Hybrid,5,0.5,0.4,1.0,True,3,"[Context 1]
+Title: To Heart 2
+Text: Its story centers on the male protagonist Takaaki Kouno, and focuses on the appeal of the female main characters.
+
+[Context 2]
+Title: Hello, Good-bye
+Text: The primary focus of the game is the appeal of the four female main characters.
+
+[Context 3]
+Title: Catching Fire
+Text: Catching Fire is a 2009 science fiction young adult novel by the American novelist Suzanne Collins, the second book in ""The Hunger Games trilogy"".
+
+[Context 4]
+Title: Catching Fire
+Text: As the sequel to the 2008 bestseller ""The Hunger Games"", it continues the story of Katniss Everdeen and the post-apocalyptic nation of Panem.
+
+[Context 5]
+Title: The Hunger Games (novel)
+Text: It is written in the voice of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America.",ANSWER: 16 years old,16 years old,False
+5ac2c3545542990b17b1548b,Chang Ucchin was born in korea during a time that ended with the conclusion of what? ,World War II,bridge,medium,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Chang Ucchin
+Text: Chang was born when Korea was still under Japanese colonial rule.
+
+[Context 2]
+Title: Chang Yong-hak
+Text: Chang was born in Hamyeong Buk-do in what is now North Korea.
+
+[Context 3]
+Title: Chang Ucchin
+Text: Chang Ucchin (26 November 1917 – 27 December 1990) is one of the representatives of modern Korean fine art.
+
+[Context 4]
+Title: Chang Ucchin
+Text: He became a professor of fine arts at Seoul National University in 1954, but resigned to paint full-time from 1960.
+
+[Context 5]
+Title: Korea under Japanese rule
+Text: Korea under Japanese rule began with the end of the short-lived Korean Empire in 1910 and ended at the conclusion of World War II in 1945.",World War II,World War II,False
+5ae3b4d05542992f92d82349,Who is the director of the 2003 film which has scenes in it filmed at the Quality Cafe in Los Angeles?,Todd Phillips,bridge,hard,Hybrid,5,0.5,0.4,0.6666666666666666,True,3,"[Context 1]
+Title: Good Life Cafe
+Text: In 2008, director Ava DuVernay, who had performed at the cafe with the Figures of Speech hip hop group, released a documentary about the cafe, ""This Is The Life"".
+
+[Context 2]
+Title: Quality Cafe
+Text: Quality Cafe is the name of two different former locations in Downtown Los Angeles, California.
+
+[Context 3]
+Title: Quality Cafe (diner)
+Text: The Quality Cafe (also known as Quality Diner) is a now-defunct diner at 1236 West 7th Street in Los Angeles, California.
+
+[Context 4]
+Title: Quality Cafe (diner)
+Text: The restaurant ceased to function as a diner in late 2006 but has appeared as a location featured in a number of Hollywood films, including ""Training Day"", ""Old School"", ""Se7en"", ""Ghost World"", ""Gone in 60 Seconds"", ""The Stepfather"", ""What's Love Got to Do with It"", ""Sex and Death 101"", and ""Catch Me If You Can.""
+
+[Context 5]
+Title: Quality Cafe (diner)
+Text: It was also featured in Season 1 of the 2007 television series ""Mad Men,"" in the episode ""5G"".",ANSWER: Ava DuVernay,Ava DuVernay,False
+5a76a401554299373536012b,"New Faces of 1952 is a musical revue with songs and comedy skits, it helped jump start the career of which young performer, and American actress?",Carol Lawrence,bridge,easy,Hybrid,5,0.5,0.2,0.5,True,2,"[Context 1]
+Title: New Faces of 1952
+Text: New Faces of 1952 is a musical revue with songs and comedy skits.
+
+[Context 2]
+Title: New Faces of 1952
+Text: It helped jump start the careers of several young performers including Paul Lynde, Alice Ghostley, Eartha Kitt, Robert Clary, Carol Lawrence, Ronny Graham, performer/writer Mel Brooks (as Melvin Brooks), and lyricist Sheldon Harnick.
+
+[Context 3]
+Title: New Faces (film)
+Text: New Faces is a 1954 American film adaptation of the musical revue ""New Faces of 1952"" directed by Harry Horner and sketches directed by John Beal.
+
+[Context 4]
+Title: New Faces of 1952
+Text: It ran on Broadway for nearly a year in 1952 and was then made into a motion picture in 1954.
+
+[Context 5]
+Title: Guess Who I Saw Today
+Text: The song was originally composed for Leonard Sillman's Broadway musical revue ""New Faces of 1952"" in which it was sung by June Carroll.",ANSWER: Paul Lynde,Paul Lynde,False
+5ae3918b5542994393b9e709,Were Pavel Urysohn and Leonid Levin known for the same type of work?,no,comparison,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Pavel Urysohn
+Text: Pavel Samuilovich Urysohn (Па́вел Самуи́лович Урысо́н ) (February 3, 1898 – August 17, 1924) was a Soviet mathematician of Jewish origin who is best known for his contributions in dimension theory, and for developing Urysohn's Metrization Theorem and Urysohn's Lemma, both of which are fundamental results in topology.
+
+[Context 2]
+Title: Tony Levin
+Text: Levin is best known for his work with King Crimson and Peter Gabriel.
+
+[Context 3]
+Title: Pavel Urysohn
+Text: His name is also commemorated in the terms Urysohn universal space, Fréchet–Urysohn space, Menger–Urysohn dimension and Urysohn integral equation.
+
+[Context 4]
+Title: Pavel Urysohn
+Text: He and Pavel Alexandrov formulated the modern definition of compactness in 1923.
+
+[Context 5]
+Title: Meyer Levin
+Text: Perhaps best known for his work on the Leopold and Loeb case, Levin worked as a journalist (for the ""Chicago Daily News"" and, from 1933–39, as an editor for ""Esquire"").",ANSWER: INSUFFICIENT,INSUFFICIENT,True
+5a8efd3c55429918e830d179,Are both The New Pornographers and Kings of Leon American rock bands?,no,comparison,hard,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Kings of Leon
+Text: Kings of Leon is an American rock band that formed in Nashville, Tennessee, in 1999.
+
+[Context 2]
+Title: Kings of Leon
+Text: The band is composed of brothers Caleb Followill (b. January 14, 1982, lead vocals, rhythm guitar), Nathan Followill (b. June 26, 1979, drums, percussion, backing vocals) and Jared Followill (b. November 20, 1986, bass guitar, backing vocals), with their cousin Matthew Followill (b. September 10, 1984, lead guitar, backing vocals).
+
+[Context 3]
+Title: A. C. Newman
+Text: Following the breakup of those bands, he reemerged as the leader of the New Pornographers in 2000, a band who have enjoyed commercial and critical success.
+
+[Context 4]
+Title: The New Pornographers
+Text: The New Pornographers is a Canadian indie rock band formed in 1997 in Vancouver, British Columbia.
+
+[Context 5]
+Title: The New Pornographers
+Text: Presented as a musical collective of singer-songwriters and musicians from multiple projects, the band has released seven studio albums to critical acclaim for their use of multiple vocalists and elements of power pop incorporated into their music.",ANSWER: YES,YES,False
+5a8b63755542997f31a41cfe,"750 7th Avenue and 101 Park Avenue, are located in which city?",New York City,comparison,easy,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: 750 7th Avenue
+Text: 750 Seventh Avenue is a 615 ft (187m) tall Class-A office skyscraper in New York City.
+
+[Context 2]
+Title: 101 Park Avenue
+Text: 101 Park Avenue is a 629 ft tall skyscraper in New York City, New York.
+
+[Context 3]
+Title: 750 7th Avenue
+Text: It is tied with the New York Life Building for the 74th tallest building in New York City.
+
+[Context 4]
+Title: 750 7th Avenue
+Text: It was completed in 1989 in the postmodern style and has 36 floors.
+
+[Context 5]
+Title: 101 Park Avenue
+Text: Eli Attia Architects designed the building, which is the 64th tallest in New York.",New York City,New York City,False
+5ac15df95542994d76dccded,"Which actress played the part of fictitious character Kimberly Ann Hart, in the franchise built around a live action superhero television series taking much of its footage from the Japanese tokusatsu 'Super Sentai'?",Amy Jo Johnson,bridge,easy,Hybrid,5,0.5,0.8,1.0,True,1,"[Context 1]
+Title: Kimberly Hart
+Text: Kimberly Ann Hart is a fictitious character in the ""Power Rangers"" universe.
+
+[Context 2]
+Title: Kimberly Hart
+Text: Played by actress Amy Jo Johnson during the first three seasons of the show, plus on the two feature films of the franchise, Kimberly has the longest tenure of any female ranger in the series' history, and fourth overall.
+
+[Context 3]
+Title: Kimberly Hart
+Text: She is possibly the best remembered as the first Pink Ranger and first Pink Ninja Ranger from the first entry of the franchise ""Mighty Morphin Power Rangers"".
+
+[Context 4]
+Title: Power Rangers
+Text: Power Rangers is an American entertainment and merchandising franchise built around a live action superhero television series.
+
+[Context 5]
+Title: Power Rangers
+Text: Produced first by Saban Entertainment, later by BVS Entertainment, and today by SCG Power Rangers, the television series takes much of its footage from the Japanese tokusatsu ""Super Sentai"", produced by Toei Company.",ANSWER: Amy Jo Johnson,Amy Jo Johnson,False
+5a7a02235542996c55b2dcd3,"Who was born first, Pablo Trapero or Aleksander Ford?",Aleksander Ford,comparison,hard,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Aleksander Ford
+Text: Aleksander Ford (born Mosze Lifszyc; 24 November 1908 in Kiev, Russian Empire – 4 April 1980 in Naples, Florida, United States) was a Polish Jewish film director; and head of the Polish People's Army Film Crew in the Soviet Union during World War II.
+
+[Context 2]
+Title: Pablo Trapero
+Text: Pablo Trapero (Born 4 October 1971) is an Argentine film producer, editor and director.
+
+[Context 3]
+Title: Aleksander Ford
+Text: Ford became director of the nationalized Film Polski company following the Red Army occupation of Poland.
+
+[Context 4]
+Title: El Bonaerense
+Text: It was directed and produced by Pablo Trapero.
+
+[Context 5]
+Title: Familia rodante
+Text: The film's executive producers were Hugo Castro Fau and Martina Gusman, and it was produced by Pablo Trapero, Robert Bevan, and Donald Ranvaud.",ANSWER: Aleksander Ford,Aleksander Ford,False
+5ac061ab554299294b218fac,Are Jane and First for Women both women's magazines?,yes,comparison,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: First for Women
+Text: First for Women is a woman's magazine published by Bauer Media Group in the USA.
+
+[Context 2]
+Title: First for Women
+Text: The magazine was started in 1989.
+
+[Context 3]
+Title: List of magazines in China
+Text: Madame Figaro"", and ""Elle"" are among such titles both of which entered into the Chinese market in 1988.
+
+[Context 4]
+Title: List of magazines in Malaysia
+Text: Some international women's magazines are also published in Malaysia.
+
+[Context 5]
+Title: Jane (magazine)
+Text: Its original target audience (pitched to advertisers) was aged 18–34, and was designed to appeal to women who did not like the typical women's magazine format.",ANSWER: No,No,False
+5ab5a2f85542997d4ad1f197,What profession does Nicholas Ray and Elia Kazan have in common?,director,comparison,medium,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Nicholas Ray
+Text: Nicholas Ray (born Raymond Nicholas Kienzle Jr., August 7, 1911 – June 16, 1979) was an American film director best known for the movie ""Rebel Without a Cause.""
+
+[Context 2]
+Title: Maya Kazan
+Text: She is the daughter of screenwriters Nicholas Kazan and Robin Swicord.
+
+[Context 3]
+Title: Elia Kazan
+Text: Elia Kazan (born Elias Kazantzoglou September 7, 1909 – September 28, 2003) was a Greek-American director, producer, writer and actor, described by ""The New York Times"" as ""one of the most honored and influential directors in Broadway and Hollywood history"".
+
+[Context 4]
+Title: A Letter to Elia
+Text: Made from clips from films, stills, readings from Kazan's autobiography, a speech he wrote on directing read by Elias Koteas, a videotaped interview done late in Kazan's life, and Scorsese's commentary on and off screen.
+
+[Context 5]
+Title: Maya Kazan
+Text: She is the granddaughter of film director Elia Kazan and playwright Molly Kazan.",Director,Director,False
+5abd7ca05542993062266cab,Where is the company that purchased Aixam based in?,"Roseau, Minnesota, USA",bridge,medium,Hybrid,5,0.5,0.2,0.5,True,2,"[Context 1]
+Title: Aixam
+Text: Aixam-Mega is a French automobile manufacturer based in Aix-les-Bains, Savoie.
+
+[Context 2]
+Title: Aixam
+Text: On April 11, 2013, US based Polaris Industries announced that it had acquired Aixam-Mega.
+
+[Context 3]
+Title: Aixam
+Text: It was founded in 1983 to make microcars following the acquisition of Arola.
+
+[Context 4]
+Title: Arola (microcar)
+Text: Arola became part of the Aixam group in 1983.
+
+[Context 5]
+Title: WizKids
+Text: WizKids/NECA, LLC is an American company based in New Jersey that first made its mark in the game industry producing collectible miniatures wargames.",INSUFFICIENT,INSUFFICIENT,True
+5a8ce5c7554299441c6b9f64,"Which documentary is about Finnish rock groups, Adam Clayton Powell or The Saimaa Gesture?",The Saimaa Gesture,comparison,medium,Hybrid,5,0.5,0.6,1.0,True,1,"[Context 1]
+Title: The Saimaa Gesture
+Text: It is a documentary of three Finnish rock groups aboard the steamboat SS Heinävesi on their tour around Lake Saimaa.
+
+[Context 2]
+Title: The Saimaa Gesture
+Text: The Saimaa Gesture (Finnish: ""Saimaa-ilmiö"" ) is a 1981 film by Finnish directors Aki and Mika Kaurismäki.
+
+[Context 3]
+Title: Adam Clayton Powell (film)
+Text: Adam Clayton Powell is a 1989 American documentary film directed by Richard Kilberg about the civil rights leader.
+
+[Context 4]
+Title: Adam Clayton Powell (film)
+Text: It was nominated for an Academy Award for Best Documentary Feature.
+
+[Context 5]
+Title: Adam Clayton Powell IV
+Text: Beginning in 2001, Powell represented the 68th Assembly District, which includes parts of Harlem and East Harlem.",The Saimaa Gesture,The Saimaa Gesture,False
+5a81ff1d554299676cceb1c3,"Who was inducted into the Rock and Roll Hall of Fame, David Lee Roth or Cia Berg?",David Lee Roth,comparison,medium,Hybrid,5,0.5,0.4,0.5,True,1,"[Context 1]
+Title: David Lee Roth
+Text: In 2007, he was inducted into the Rock and Roll Hall of Fame.
+
+[Context 2]
+Title: The Midnighters
+Text: The group's lead singer, Hank Ballard, was inducted into the Rock and Roll Hall of Fame in 1990.
+
+[Context 3]
+Title: Sammy Hagar
+Text: On March 12, 2007, Hagar was inducted into the Rock and Roll Hall of Fame as a member of Van Halen.
+
+[Context 4]
+Title: The Midnighters
+Text: The Midnighters as a ""group"" were inducted into the Rock and Roll Hall of Fame on April 14, 2012.
+
+[Context 5]
+Title: Cia Berg
+Text: She was at one time the lead singer of the Swedish rock band Whale, who released the single ""Hobo Humpin' Slobo Babe"".",ANSWER: INSUFFICIENT,INSUFFICIENT,True
+5ae732685542991e8301cbc3,Zimbabwe's Guwe Secondary School has a sister school in what New York cunty?,Nassau County,bridge,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Guwe Secondary School
+Text: It has a sister school in Carle Place, New York, United States.
+
+[Context 2]
+Title: Guwe Secondary School
+Text: Guwe Secondary School is located in Zimbabwe.
+
+[Context 3]
+Title: Singwango Secondary School
+Text: It had a sister school in Carle Place, New York, United States, although Carle Place High School still donates sports equipment and clothes.
+
+[Context 4]
+Title: Inyathi High School
+Text: Inyathi High School is a boarding co-educational secondary school in Inyathi, Zimbabwe designed along the lines of the traditional British Boarding Public School System (without the attendant social implications).
+
+[Context 5]
+Title: Inyathi High School
+Text: Inyathi High School (formerly, Inyathi Secondary School and prior to that Inyathi Mission) holds the distinction of being the oldest formal educational institution of any kind in Zimbabwe.",INSUFFICIENT,INSUFFICIENT,True
+5a8a2ebc5542996c9b8d5e33,"The Royal Commission into Drug Trafficking (1977–1979) or Woodward Royal Commission was a royal commission initiated by the New South Wales Government to investigate drug trafficking in New South Wales, Australia, especially links between the New South Wales Police and Mafia, The Honoured Society, is a Calabrian 'Ndrangheta criminal confederation, started in Melbourne and currently active in all of which country?  ",Australia,bridge,easy,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Royal Commission into Drug Trafficking
+Text: The Royal Commission into Drug Trafficking (1977–1979) or Woodward Royal Commission was a royal commission initiated by the New South Wales Government to investigate drug trafficking in New South Wales, Australia, especially links between the Mafia and New South Wales Police and the disappearance of anti-marijuana campaigner Donald Mackay.
+
+[Context 2]
+Title: Royal Commission of Inquiry into Drug Trafficking
+Text: The Royal Commission of Inquiry into Drug Trafficking (1981–1983), also known as the Stewart Royal Commission, was a Royal Commission set up in 1981 by the Commonwealth, Queensland, New South Wales and Victorian governments to inquire into various drug trafficking and related criminal activities of Terence John Clark and his associates.
+
+[Context 3]
+Title: Honoured Society (Australia)
+Text: The Honoured Society (Italian: ""Onorata Società"" ) is a Calabrian 'Ndrangheta criminal confederation, started in Melbourne and currently active in all Australia.
+
+[Context 4]
+Title: Kennedy Royal Commission
+Text: The Royal commission into whether there has been corrupt or criminal conduct by any Western Australian Police Officer, commonly known as the Kennedy Royal Commission, was a Royal Commission established in 2002 by the state government of Western Australia to determine whether any officer of the Western Australia Police had engaged in corrupt or criminal conduct.
+
+[Context 5]
+Title: Chelmsford Royal Commission
+Text: The Chelmsford Royal Commission (1988–1990), chaired by Justice John Patrick Slattery, was established by the New South Wales state government, ostensibly to investigate mental health services in The state.",INSUFFICIENT,INSUFFICIENT,True
+5add28c85542992ae4cec4be,"The 337th Flight Test Squadron (337 FLTS) was most recently part of the 46th Test Wing and based at McClellan Air Force Base, a former United States Air Force base located in the North Highlands area of Sacramento County, in which US state?",California,bridge,easy,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: 337th Flight Test Squadron
+Text: The 337th Flight Test Squadron (337 FLTS) was most recently part of the 46th Test Wing and based at McClellan Air Force Base, California.
+
+[Context 2]
+Title: McClellan Air Force Base
+Text: McClellan Air Force Base (1935–2001) is a former United States Air Force base located in the North Highlands area of Sacramento County, 7 mi northeast of Sacramento, California.
+
+[Context 3]
+Title: 586th Flight Test Squadron
+Text: The 586th Flight Test Squadron (586 FLTS) is part of the 96th Test Wing based at Holloman Air Force Base, New Mexico.
+
+[Context 4]
+Title: 46th Test Wing
+Text: The 46th Test Wing is an inactive wing of the United States Air Force last based at Eglin Air Force Base, Florida.
+
+[Context 5]
+Title: 486th Flight Test Squadron
+Text: The 486th Flight Test Squadron is a secretive unit, with a somewhat misleading designation, assigned to Eglin Air Force Base, Florida, and which is associated with United States Department of State Foreign Emergency Support Team activities.",California,California,False
+5a7d90195542991319bc93cf,The axial turbojet Pirna 014 was designed by engineers from this German aircraft and aircraft engine manufacturer based in which city?,Dessau,bridge,medium,Hybrid,5,0.5,0.2,0.3333333333333333,True,1,"[Context 1]
+Title: Pirna 014
+Text: The Pirna 014 was an axial turbojet designed in East Germany (or the GDR) in the mid- to late 1950s by former Junkers engineers, who were repatriated to East Germany in 1954 after being held in custody in the Soviet Union following World War II.
+
+[Context 2]
+Title: Hexatron Engineering
+Text: Hexatron Engineering Co., Inc. is an American aerospace engineering, aircraft engine and aircraft parts manufacturer based in Salt Lake City, Utah.
+
+[Context 3]
+Title: Stratus 2000
+Text: Stratus 2000, Inc was an American aircraft engine manufacturer based in Camano Island, Washington and later in Corvallis, Oregon.
+
+[Context 4]
+Title: BMW R32
+Text: An aircraft engine manufacturer during World War I, BMW was forced to diversify after the Treaty of Versailles banned the German air force and German aircraft manufacture.
+
+[Context 5]
+Title: Orenda Iroquois
+Text: The Orenda PS.13 Iroquois was an advanced turbojet engine designed for military use.",INSUFFICIENT,INSUFFICIENT,True
+5abe3f9455429976d4830aaa,"Which faith is designated to the University of Providence, private university accredited by the NW association of Schools and Colleges and located in a third largest city in Montana after being passed by Missoula? ",Roman Catholic,bridge,easy,Hybrid,5,0.5,0.4,0.4,True,1,"[Context 1]
+Title: University of Providence
+Text: The university is accredited by the Northwest Association of Schools and Colleges.
+
+[Context 2]
+Title: New Providence High School
+Text: The school has been accredited by the Middle States Association of Colleges and Schools Commission on Secondary Schools since 1965.
+
+[Context 3]
+Title: University of Providence
+Text: The University of Providence (UP) (renamed from University of Great Falls in July 2017), is a private Roman Catholic university located in Great Falls, Montana within the Diocese of Great Falls–Billings.
+
+[Context 4]
+Title: Lynn University
+Text: The university is accredited by the Commission on Colleges of the Southern Association of Colleges and Schools to award associate's, baccalaureate, master's and doctoral degrees.
+
+[Context 5]
+Title: Ohio Northern University
+Text: ONU is accredited by The Higher Learning Commission and the North Central Association of Colleges and Schools.",INSUFFICIENT,INSUFFICIENT,True
+5abee5e25542994516f45473,Pauline Henry was known as the vocalist of a very popular cover song. Which album was this song from?,The Joshua Tree,bridge,medium,Hybrid,5,0.5,0.4,0.5,True,1,"[Context 1]
+Title: Pauline Henry
+Text: She was the vocalist in the Scottish band The Chimes, best known for their 1990 cover version of U2's ""I Still Haven't Found What I'm Looking For"", between 1988 and 1991.
+
+[Context 2]
+Title: Pauline Henry
+Text: Pauline Henry (born 29 January 1961) is a British Jamaican recording artist.
+
+[Context 3]
+Title: Pauline Henry
+Text: Following her departure from the group, Henry embarked on a solo career, and achieved five UK top 40 singles between 1993 and 1996.
+
+[Context 4]
+Title: The Chimes (album)
+Text: Featuring singer Pauline Henry on vocals, the album includes their cover of U2's ""I Still Haven't Found What I'm Looking For"", which reached number 6 in the UK Singles Chart, along with their other Top 40 hit ""Heaven"", which reached number 24.
+
+[Context 5]
+Title: The Chimes (Scottish band)
+Text: Pauline Henry (born in Jamaica) with Mike Peden and James Locke from Edinburgh, in Scotland.","The album that featured Pauline Henry singing the cover of U2's ""I Still Haven't Found What I'm Looking","The album that featured Pauline Henry singing the cover of U2's ""I Still Haven't Found What I'm Looking",False
+5ae78ec5554299540e5a5605,Guitars for Wounded Warriors is an album that was recorded in the village in which New York county?,Ulster County,bridge,hard,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Guitars for Wounded Warriors
+Text: All tracks were recorded at Tarquin's Jungle Room Studios in New Paltz (village), New York.
+
+[Context 2]
+Title: Guitars for Wounded Warriors
+Text: Guitars for Wounded Warriors is the sixth solo studio album by guitarist Brian Tarquin, released in August 2014 by Cleopatra Records.
+
+[Context 3]
+Title: Guitars for Wounded Warriors
+Text: In 2016, it received a Best Compilation Album nomination by the Independent Music Awards.
+
+[Context 4]
+Title: Guitars for Wounded Warriors
+Text: The entire album was engineered, produced and composed by Tarquin especially for each one of the guest guitarists.
+
+[Context 5]
+Title: Guitars for Wounded Warriors
+Text: Being moved by the lack of support for returning veterans through his life Tarquin decided to compose a heavy instrumental rock album as a way to show his appreciation to all veterans.",INSUFFICIENT,INSUFFICIENT,True
+5a760a5f554299109176e629,"What American country music singer-songwriter, born in May of 1942, sang a duet with her ex-husband the same year that he released the song ""The Battle?""",Tammy Wynette,bridge,medium,Hybrid,5,0.5,0.6,1.0,True,1,"[Context 1]
+Title: The Battle (George Jones song)
+Text: Meanwhile, the single ""Golden Ring,"" a duet with his estranged ex-wife Tammy Wynette, became a #1 hit that same year.
+
+[Context 2]
+Title: The Battle (George Jones song)
+Text: ""The Battle"" is a song by American country music artist George Jones.
+
+[Context 3]
+Title: Bobby Lewis (country singer)
+Text: Bobby Lewis (born May 9, 1942 in Hodgenville, Kentucky) is an American country music singer-songwriter.
+
+[Context 4]
+Title: The Battle (George Jones song)
+Text: The song uses war as a metaphor in describing an argument and eventual reconciliation between a couple, with the woman emerging victorious and the narrator exclaiming, ""Oh, what a sweet surrender!""
+
+[Context 5]
+Title: Tammy Wynette
+Text: Tammy Wynette (born Virginia Wynette Pugh; May 5, 1942 – April 6, 1998) was an American country music singer-songwriter and one of country music's best-known artists and biggest-selling female singers.",ANSWER: Tammy Wynette,Tammy Wynette,False
+5a7a52745542996c55b2dd4f,"Who was born first, Francis Nethersole or Elizabeth Stuart?",Sir Francis Nethersole,bridge,hard,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Francis Nethersole
+Text: Sir Francis Nethersole (1587–1659) was an English diplomat, secretary to the Electress Elizabeth, Member of Parliament for Corfe Castle, Dorset, and a Civil War political pamphleteer.
+
+[Context 2]
+Title: Margaret Howard, Countess of Nottingham
+Text: Margaret Stuart (or Stewart) (c. 1591 – 4 August 1639), was an English court office holder.
+
+[Context 3]
+Title: Philip Howard (cardinal)
+Text: Born the third son of Henry Frederick Howard (afterwards Earl of Arundel and Surrey and head of the House of Norfolk) and his wife, Elizabeth Stuart (daughter of Esme Stuart, the Duke of Lennox), Howard was a member of the premier Catholic family in England.
+
+[Context 4]
+Title: James Stuart, 3rd Earl of Moray
+Text: James Stuart, 3rd Earl of Moray (1581 – 6 August 1638) was the son of James Stewart, 2nd Earl of Moray and Elizabeth Stuart, 2nd Countess of Moray.
+
+[Context 5]
+Title: Elisabeth of the Palatinate
+Text: Elisabeth of the Palatinate (26 December 1618 – 11 February 1680), also known as Elisabeth of Bohemia, Princess Elisabeth of the Palatinate, or Princess-Abbess of Herford Abbey, was the eldest daughter of Frederick V, Elector Palatine (who was briefly King of Bohemia), and Elizabeth Stuart.",INSUFFICIENT,INSUFFICIENT,True
+5ac1f7f355429964131be2ae,What does the Hacker-Pschorr Brewery have to limit in order to comply with German regulations?,ingredients in beer,bridge,hard,Hybrid,5,0.5,0.4,0.6666666666666666,True,1,"[Context 1]
+Title: Hacker-Pschorr Brewery
+Text: Hacker-Pschorr is a brewery in Munich, formed in 1972 out of the merger of two breweries, Hacker and Pschorr.
+
+[Context 2]
+Title: Hacker-Pschorr Brewery
+Text: Hacker was founded in 1417, 99 years before the enactment of the Reinheitsgebot Purity Law of 1516.
+
+[Context 3]
+Title: Reinheitsgebot
+Text: The Reinheitsgebot (] , literally ""purity order""), sometimes called the ""German Beer Purity Law"" in English, is the collective name for a series of regulations limiting the ingredients in beer in Germany and the states of the former Holy Roman Empire.
+
+[Context 4]
+Title: Self-executing order
+Text: If the party does not comply with the request, the sanctions will apply with no further court order required.
+
+[Context 5]
+Title: Greisen–Zatsepin–Kuzmin limit
+Text: The limit is at the same order of magnitude as the upper limit for energy at which cosmic rays have experimentally been detected.",Reinheitsgebot,Reinheitsgebot,False
+5a74248855429929fddd83e5,"Don Barry Mason was the founder of the Psychedelic Shamanistic Institute (PSI), which other member that's Welsh, that died on 10 April 2016?",Dennis Howard Marks,bridge,easy,Hybrid,5,0.5,0.4,1.0,True,2,"[Context 1]
+Title: Don Barry Mason
+Text: Don 'Barry' Mason (1950–2006) was the founder of the Psychedelic Shamanistic Institute (PSI), a networking organisation that encouraged ethnobotany and scientific research into cannabis and other psychoactive plants while contributing substantially to the public debate about drug policy reform.
+
+[Context 2]
+Title: Don Barry Mason
+Text: Associates of PSI include: Mathew Atha, Colin Angus, Brian Barritt, Michael Carmichael, Fraser Clark, Paul Devereux, the late John Entwistle, Paul Flynn MP, Ben Ganly, Lee Harris, Mike Jay, Howard Marks, Dr John Marks, Jonathan Ott, Dr Russell Newcombe, Richard Rudgley and Youth.
+
+[Context 3]
+Title: Charles Cardoza Poindexter
+Text: Poindexter was also known for being the precursor, but not a Founder, of the oldest intercollegiate fraternity for blacks in America, Alpha Phi Alpha, who later on became a prominent member and influence in Omega Psi Phi, using his earlier experience to develop much of the framework.
+
+[Context 4]
+Title: Matthew Mason (Welsh cricketer)
+Text: Matthew Barry Mason (born 24 November 1984 in Swansea) is a Welsh cricketer.
+
+[Context 5]
+Title: Howard Marks
+Text: Dennis Howard Marks (13 August 1945 – 10 April 2016) was a Welsh drug smuggler and author who achieved notoriety as an international cannabis smuggler through high-profile court cases.",Matthew Barry Mason,Matthew Barry Mason,False
+5abd04f15542996e802b467e,What male actor starred in The Messenger?,Robert Sheehan,bridge,easy,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: The Messenger (2015 horror film)
+Text: The Messenger is a 2015 British supernatural mystery horror film directed by David Blair, written by Andrew Kirk and starring Robert Sheehan and Lily Cole.
+
+[Context 2]
+Title: Robert Sheehan
+Text: He also co-starred in the film ""Killing Bono"" as Ivan McCormick.
+
+[Context 3]
+Title: Sverrir Gudnason
+Text: He starred in the 2007 television series How Soon Is Now.
+
+[Context 4]
+Title: Robert Sheehan
+Text: In late 2011 he starred in John Crowley's production of J. M. Synge's comic play ""The Playboy of the Western World"" at the Old Vic Theatre in London.
+
+[Context 5]
+Title: Kurt Kreuger
+Text: He starred with, among others, Ingrid Bergman and Humphrey Bogart.",ANSWER: Robert Sheehan,Robert Sheehan,False
+5ac3ad225542995ef918c1da,Are Gin and tonic and Paloma both cocktails based on tequila?,no,comparison,medium,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Paloma (cocktail)
+Text: The paloma (Spanish for ""dove"") is a tequila-based cocktail.
+
+[Context 2]
+Title: Paloma (cocktail)
+Text: This drink is most commonly prepared by mixing tequila with a grapefruit-flavored soda such as Fresca, Squirt, or Jarritos and served on the rocks with a lime wedge.
+
+[Context 3]
+Title: Tequila and tonic
+Text: The drink is made with a 2:1 ratio of tonic water to tequila and is served with lemon or lime wedges on ice.
+
+[Context 4]
+Title: Seafood cocktail
+Text: Seafood cocktails often include lime juice, a tomato based sauce and are sometimes served with lemon.
+
+[Context 5]
+Title: Tequila and tonic
+Text: Tequila and tonic, also known as TnT or Teqtonic, is a non-standard highball beverage.",ANSWER: No,No,False
+5a736bfa5542991f29ee2e03,Who is older Glenn Hughes or Ross Lynch?,Glenn Hughes,comparison,hard,Hybrid,5,0.5,0.2,0.5,True,1,"[Context 1]
+Title: Ross Lynch
+Text: Ross Shor Lynch (born December 29, 1995) is an American singer, songwriter, and actor.
+
+[Context 2]
+Title: Ross Lynch
+Text: He is one of the founding members of the pop rock band R5.
+
+[Context 3]
+Title: Babette Hughes
+Text: She was born in Seattle, Washington and while an English student at the University of Washington she met the American playwright Glenn Hughes who she married in 1924 for around 20 years.
+
+[Context 4]
+Title: Ross Lynch
+Text: The movie is set to debut in the fall of 2017.
+
+[Context 5]
+Title: Ross Lynch
+Text: Lynch is also starring in a new horror/thriller movie called ""My Friend Dahmer,"" where he plays the role of Jeffrey Dahmer in his teenage years.",INSUFFICIENT,INSUFFICIENT,True
+5addfe6c5542997dc790710e,"In what year was the creator of the current arrangement of the ""Simpson's Theme"" born?","March 28, 1941",bridge,hard,Hybrid,5,0.5,0.4,0.6666666666666666,True,1,"[Context 1]
+Title: The Simpsons Theme
+Text: The theme, as used for the opening sequence, was re-arranged during season 2, and the current arrangement by Alf Clausen was introduced at the beginning of the third season.
+
+[Context 2]
+Title: Donnie Simpson
+Text: He was ""Billboard's"" ""Radio Personality of the Year"" and ""Program Director of the Year"".
+
+[Context 3]
+Title: The Simpsons Theme
+Text: It plays during the opening sequence and was composed by Danny Elfman in 1989, after series creator Matt Groening approached him requesting a retro-style theme.
+
+[Context 4]
+Title: The Simpsons Theme
+Text: ""The Simpsons"" Theme"", also referred to as ""The Simpsons"" Main Title Theme"" in album releases, is the theme music of the animated television series ""The Simpsons"".
+
+[Context 5]
+Title: Mark Simpson (clarinetist)
+Text: In the same year, Simpson was also the winner of the BBC Young Composer of the Year competition, becoming the only person in history to have ever won both competitions.",INSUFFICIENT,INSUFFICIENT,True
+5a7a0a965542996c55b2dce7,The Southern Railway runs from Vienna to Graz and the border with Slovenia at Spielfeld via the first mountain railway built in Europe to use what kind of track?,standard gauge track,bridge,hard,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Southern Railway (Austria)
+Text: The Southern Railway (German: ""Südbahn"" ) is a railway in Austria that runs from Vienna to Graz and the border with Slovenia at Spielfeld via Semmering and Bruck an der Mur.
+
+[Context 2]
+Title: Semmering railway
+Text: The Semmering railway (German: ""Semmeringbahn"" ) in Austria, which starts at Gloggnitz and leads over the Semmering to Mürzzuschlag was the first mountain railway in Europe built with a standard gauge track.
+
+[Context 3]
+Title: Southern Railway (Austria)
+Text: It was originally built by the Austrian Southern Railway company and ran to Ljubljana and Trieste, the main seaport of the Austro-Hungarian Monarchy.
+
+[Context 4]
+Title: Reisseck Railway
+Text: The Reisseck Railway (sometimes Reißeck Railway, German: ""Reißeckbahn"" ) is a mountain railway, that runs from Carinthia's Möll valley into the Reißeck Group, a small mountain range in southern Austria.
+
+[Context 5]
+Title: Southern Railway (Austria)
+Text: The twin-track, electrified section that runs through the current territory of Austria is owned and operated by Austrian Federal Railways (ÖBB) and is one of the major lines in the country.",INSUFFICIENT,INSUFFICIENT,True
+5a8ae49155429951533613a3,In what show did Cynthia Nixon receive the 2004 Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series and a Screen Actors Guild Award for her performance?,Sex and the City,bridge,easy,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Cynthia Nixon
+Text: She is known for her portrayal of Miranda Hobbes in the HBO series, ""Sex and the City"" (1998–2004), for which she won the 2004 Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series.
+
+[Context 2]
+Title: Miranda Hobbes
+Text: Nixon received an Emmy Award and a Screen Actors Guild Award for her performance.
+
+[Context 3]
+Title: Cynthia Nixon
+Text: She reprised the role in the films ""Sex and the City"" (2008) and ""Sex and the City 2"" (2010).
+
+[Context 4]
+Title: Crazy Eyes (character)
+Text: She received the Emmy Award for Outstanding Supporting Actress in a Drama Series as well as the Screen Actors Guild Award for Outstanding Performance by a Female Actor in a Comedy Series for her season two performance.
+
+[Context 5]
+Title: List of awards and nominations received by Lost
+Text: Amongst the wins for the series are a Primetime Emmy Award for Outstanding Drama Series, a Golden Globe Award for Best Television Series – Drama, a Screen Actors Guild Award for Outstanding Performance by an Ensemble in a Drama Series, and a Peabody Award.",Sex and the City,Sex and the City,False
+5a74bdbf5542996c70cfadc7,"Lee Jun-fan played what character in ""The Green Hornet"" television series?",Kato,bridge,medium,Hybrid,5,0.5,0.2,0.3333333333333333,True,2,"[Context 1]
+Title: The Green Hornet (TV series)
+Text: The Green Hornet is a television series on the ABC US television network that aired for the 1966–1967 TV season starring Van Williams as the Green Hornet/Britt Reid and Bruce Lee as Kato.
+
+[Context 2]
+Title: Kato (The Green Hornet)
+Text: Keye Luke took the role in the movie serials, and in the television series he was portrayed by Bruce Lee.
+
+[Context 3]
+Title: Kato (The Green Hornet)
+Text: This character has also appeared with the Green Hornet in film, television, book and comic book versions.
+
+[Context 4]
+Title: Green Hornet
+Text: The character appeared in film serials in the 1940s, a television show in the 1960s, multiple comic book series from the 1940s on, and a feature film in January 2011.
+
+[Context 5]
+Title: The Green Hornet (Hong Kong film)
+Text: Based on the American Green Hornet series the film focuses on the character of Kato.",Kato,Kato,False
+5ab99943554299131ca42391,"The 1895/96 Football League season was the eighth in Football League history with Everton, their Goodison Park home, is a football stadium located in Walton, Liverpool, in which country?",England,bridge,easy,Hybrid,5,0.5,0.4,1.0,True,1,"[Context 1]
+Title: Goodison Park
+Text: Goodison Park is a football stadium located in Walton, Liverpool, England.
+
+[Context 2]
+Title: 1895–96 Everton F.C. season
+Text: The 1895/96 Football League season was the eighth in Football League history with Everton having been an ever present in the top division.
+
+[Context 3]
+Title: Goodison Park
+Text: The stadium has been home to Premier League club Everton since its completion in 1892 and is one of the world's oldest purpose-built football grounds.
+
+[Context 4]
+Title: 1895–96 Everton F.C. season
+Text: Their Goodison Park home hosted the drawn semi final between Wednesday and Bolton Wanderers.
+
+[Context 5]
+Title: Anfield
+Text: It was originally the home of Everton F.C. from 1884 to 1891, before they moved to Goodison Park after a dispute with the club president.",England,England,False
+5a8195f35542995ce29dcc0c,"A Head Full of Dreams Tour is the seventh tour by Coldplay, and which had it's first show at a stadium that is known as Estadio Unico and is owned by who?",Province of Buenos Aires,bridge,medium,Hybrid,5,0.5,0.6,1.0,True,1,"[Context 1]
+Title: A Head Full of Dreams Tour
+Text: The first show of the tour was held at the Estadio Ciudad de La Plata in La Plata, Argentina, on 31 March 2016 and is set to conclude at the same venue on 15 November 2017.
+
+[Context 2]
+Title: A Head Full of Dreams Tour
+Text: The A Head Full of Dreams Tour is the seventh concert tour currently being undertaken by British alternative rock band Coldplay, launched in support of their namesake seventh studio album ""A Head Full of Dreams"".
+
+[Context 3]
+Title: A Head Full of Dreams
+Text: A Head Full of Dreams is the seventh studio album by the British rock band Coldplay.
+
+[Context 4]
+Title: Estadio Ciudad de La Plata
+Text: It is also known popularly as the Estadio Único and is owned by the Province of Buenos Aires, administered jointly by the provincial government, the Municipality of La Plata, and the football clubs Estudiantes de La Plata and Gimnasia y Esgrima de la Plata.
+
+[Context 5]
+Title: A Head Full of Dreams Tour
+Text: The tour consists of eight legs, with a total of 123 shows across Latin America, where they performed for the first time since the Viva la Vida Tour, Europe, North America, where they embarked on their very first stadium tour of the United States, Oceania, and Asia.",INSUFFICIENT,INSUFFICIENT,True
+5ab70446554299110f219a94,"Roger Avary (born August 23, 1965) is a Canadian film and television producer, screenwriter and director in the American mass media industry, he wrote the screenplay for Beowulf, a 2007 British-American 3D motion capture epic fantasy film, directed by who?",Robert Zemeckis,bridge,easy,Hybrid,5,0.5,0.4,1.0,True,2,"[Context 1]
+Title: Roger Avary
+Text: Roger Avary (born August 23, 1965) is a Canadian film and television producer, screenwriter and director in the American mass media industry.
+
+[Context 2]
+Title: Beowulf (2007 film)
+Text: Beowulf is a 2007 British-American 3D motion capture epic fantasy film directed by Robert Zemeckis and written by Neil Gaiman and Roger Avary, based on the Old English epic poem of the same name.
+
+[Context 3]
+Title: Roger Avary
+Text: He wrote the screenplays for ""Silent Hill"" and ""Beowulf"".
+
+[Context 4]
+Title: Beowulf (2007 film)
+Text: The film was created through a motion capture process similar to the technique Zemeckis used in ""The Polar Express"".
+
+[Context 5]
+Title: Beowulf: Return to the Shieldlands
+Text: Beowulf is a British epic fantasy drama television series from ITV, consisting of 12 episodes and created by James Dormer, Tim Haines, and Katie Newman.",INSUFFICIENT,INSUFFICIENT,True
+5adbe1e755429947ff173853,"The American Pre-Code comedy film featuring an American actress, dancer, and singer, widely known for performing in films and RKO's musical films, was released in what year?",1932,bridge,medium,Hybrid,5,0.5,0.2,0.3333333333333333,True,1,"[Context 1]
+Title: Ginger Rogers
+Text: Ginger Rogers (born Virginia Katherine McMath; July 16, 1911 – April 25, 1995) was an American actress, dancer, and singer, widely known for performing in films and RKO's musical films, partnered with Fred Astaire.
+
+[Context 2]
+Title: Cracked Nuts
+Text: The film was one of RKO's only financial successes of the year.
+
+[Context 3]
+Title: Ladies of the Jury
+Text: The film was released on February 5, 1932, by RKO Pictures.
+
+[Context 4]
+Title: Little Orphan Annie (1932 film)
+Text: The film was released on November 4, 1932, by RKO Pictures.
+
+[Context 5]
+Title: International House (1933 film)
+Text: The film includes some risqué pre-Code humor.",ANSWER: 1932,1932,False
+5a904e725542995651fb5118,"An edited version of ""Just the Two of Us"" reached number two on the ""Billboard"" Hot 100 behind a song written and composed by Donna Weiss and Jackie DeShannon which spend how many weeks at No. 1 on the ""Billboard"" hot 100?",nine,bridge,medium,Hybrid,5,0.5,0.6,0.75,True,1,"[Context 1]
+Title: Just the Two of Us (Grover Washington Jr. song)
+Text: An edited version reached number two on the ""Billboard"" Hot 100, staying there for 3 weeks, behind ""Morning Train (9 to 5)"" by Sheena Easton and ""Bette Davis Eyes"" by Kim Carnes.
+
+[Context 2]
+Title: Just the Two of Us (Grover Washington Jr. song)
+Text: ""Just the Two of Us"" is a 1981 R&B single written by Bill Withers, William Salter and Ralph MacDonald, which was recorded by Grover Washington Jr. and Bill Withers.
+
+[Context 3]
+Title: Just the Two of Us (Grover Washington Jr. song)
+Text: Bill Withers included the edited version on the 1981 compilation ""Bill Withers' Greatest Hits"" and many subsequent greatest hits collections.
+
+[Context 4]
+Title: Bette Davis Eyes
+Text: DeShannon recorded it in 1974; Carnes's 1981 version spent nine weeks at No. 1 on the ""Billboard"" Hot 100 and was ""Billboard""' s biggest hit of 1981.
+
+[Context 5]
+Title: Just the Two of Us (Grover Washington Jr. song)
+Text: The song originally appeared on Washington's 1980 album ""Winelight"".",INSUFFICIENT,INSUFFICIENT,True
