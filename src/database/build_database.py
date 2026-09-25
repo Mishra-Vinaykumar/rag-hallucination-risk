@@ -10,7 +10,7 @@ import statistics
 from pathlib import Path
 
 DATABASE_VERSION = "1.0"
-FEATURE_VERSION = "retrieval_trace_v1"
+FEATURE_VERSION = "retrieval_trace_v2"
 
 
 def text(value):
@@ -306,7 +306,32 @@ def import_automated_labels(connection, path, experiment_id):
 
 
 def tokens(value):
-    return set(re.findall(r"\b\w+\b", value.lower()))
+    return re.findall(r"\b\w+\b", value.lower())
+
+
+def correlation(left, right):
+    if len(left) < 2 or len(left) != len(right):
+        return None
+    left_mean = statistics.fmean(left)
+    right_mean = statistics.fmean(right)
+    numerator = sum(
+        (a - left_mean) * (b - right_mean) for a, b in zip(left, right)
+    )
+    left_scale = math.sqrt(sum((value - left_mean) ** 2 for value in left))
+    right_scale = math.sqrt(sum((value - right_mean) ** 2 for value in right))
+    denominator = left_scale * right_scale
+    return numerator / denominator if denominator else None
+
+
+def mean_pairwise_diversity(chunk_texts):
+    token_sets = [set(tokens(value)) for value in chunk_texts]
+    distances = []
+    for index, left in enumerate(token_sets):
+        for right in token_sets[index + 1:]:
+            union = left | right
+            similarity = len(left & right) / len(union) if union else 1.0
+            distances.append(1.0 - similarity)
+    return statistics.fmean(distances) if distances else 0.0
 
 
 def engineer_features(connection):
@@ -316,7 +341,8 @@ def engineer_features(connection):
     ).fetchall()
     for experiment_id, query_id in groups:
         event_rows = connection.execute(
-            """SELECT r.retrieval_score, r.document_id, c.chunk_text
+            """SELECT r.retrieval_score, r.document_id, c.chunk_text,
+                      r.bm25_score, r.dense_score
                FROM retrieval_events r
                JOIN document_chunks c
                  ON c.query_id=r.query_id AND c.chunk_id=r.chunk_id
@@ -332,30 +358,66 @@ def engineer_features(connection):
         question_text = connection.execute(
             "SELECT question_text FROM questions WHERE query_id=?", (query_id,)
         ).fetchone()[0]
-        question_tokens = tokens(question_text)
-        context_tokens = tokens(" ".join(row[2] for row in event_rows))
+        question_token_list = tokens(question_text)
+        context_token_list = tokens(" ".join(row[2] for row in event_rows))
+        question_tokens = set(question_token_list)
+        context_tokens = set(context_token_list)
         overlap = (
             len(question_tokens & context_tokens) / len(question_tokens)
             if question_tokens else 0.0
         )
+        score_range = max(scores) - min(scores)
+        score_mean = statistics.fmean(scores)
+        score_stddev = statistics.pstdev(scores)
+        near_top_threshold = max(scores) - (0.10 * score_range)
+        unique_documents = len({row[1] for row in event_rows})
+        chunk_texts = [row[2] for row in event_rows]
+        normalized_chunks = [" ".join(tokens(value)) for value in chunk_texts]
+        duplicate_ratio = 1.0 - (len(set(normalized_chunks)) / len(normalized_chunks))
+        bm25_scores = [row[3] for row in event_rows]
+        dense_scores = [row[4] for row in event_rows]
+        hybrid_correlation = (
+            correlation(bm25_scores, dense_scores)
+            if all(value is not None for value in bm25_scores + dense_scores)
+            else None
+        )
         connection.execute(
-            """INSERT INTO retrieval_features VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """INSERT INTO retrieval_features VALUES (
+                   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+               )
                ON CONFLICT(experiment_id, query_id, feature_version) DO UPDATE SET
                    score_max=excluded.score_max, score_min=excluded.score_min,
                    score_mean=excluded.score_mean, score_median=excluded.score_median,
                    score_stddev=excluded.score_stddev,
+                   score_range=excluded.score_range,
+                   score_coefficient_variation=excluded.score_coefficient_variation,
                    rank1_rank2_gap=excluded.rank1_rank2_gap,
+                   rank1_rankk_decay=excluded.rank1_rankk_decay,
                    score_entropy=excluded.score_entropy,
+                   normalized_score_entropy=excluded.normalized_score_entropy,
+                   near_top_passage_count=excluded.near_top_passage_count,
                    unique_document_count=excluded.unique_document_count,
+                   source_diversity_ratio=excluded.source_diversity_ratio,
+                   duplicate_context_ratio=excluded.duplicate_context_ratio,
                    context_character_count=excluded.context_character_count,
-                   lexical_overlap=excluded.lexical_overlap""",
+                   context_token_count=excluded.context_token_count,
+                   query_character_count=excluded.query_character_count,
+                   query_token_count=excluded.query_token_count,
+                   lexical_overlap=excluded.lexical_overlap,
+                   mean_pairwise_context_diversity=excluded.mean_pairwise_context_diversity,
+                   bm25_dense_score_correlation=excluded.bm25_dense_score_correlation""",
             (
                 experiment_id, query_id, FEATURE_VERSION, max(scores), min(scores),
-                statistics.fmean(scores), statistics.median(scores),
-                statistics.pstdev(scores),
+                score_mean, statistics.median(scores), score_stddev, score_range,
+                score_stddev / abs(score_mean) if score_mean else None,
                 scores[0] - scores[1] if len(scores) > 1 else None,
-                entropy, len({row[1] for row in event_rows}),
-                sum(len(row[2]) for row in event_rows), overlap,
+                scores[0] - scores[-1] if len(scores) > 1 else None,
+                entropy, entropy / math.log(len(scores)) if len(scores) > 1 else 0.0,
+                sum(score >= near_top_threshold for score in scores),
+                unique_documents, unique_documents / len(event_rows), duplicate_ratio,
+                sum(len(value) for value in chunk_texts), len(context_token_list),
+                len(question_text), len(question_token_list), overlap,
+                mean_pairwise_diversity(chunk_texts), hybrid_correlation,
             ),
         )
 

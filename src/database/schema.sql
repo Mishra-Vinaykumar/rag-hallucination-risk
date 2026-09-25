@@ -145,14 +145,77 @@ CREATE TABLE IF NOT EXISTS retrieval_features (
     score_mean REAL,
     score_median REAL,
     score_stddev REAL,
+    score_range REAL,
+    score_coefficient_variation REAL,
     rank1_rank2_gap REAL,
+    rank1_rankk_decay REAL,
     score_entropy REAL,
+    normalized_score_entropy REAL,
+    near_top_passage_count INTEGER,
     unique_document_count INTEGER,
+    source_diversity_ratio REAL,
+    duplicate_context_ratio REAL,
     context_character_count INTEGER,
+    context_token_count INTEGER,
+    query_character_count INTEGER,
+    query_token_count INTEGER,
     lexical_overlap REAL,
+    mean_pairwise_context_diversity REAL,
+    bm25_dense_score_correlation REAL,
     PRIMARY KEY (experiment_id, query_id, feature_version),
     FOREIGN KEY (experiment_id) REFERENCES experiments(experiment_id) ON DELETE CASCADE,
     FOREIGN KEY (query_id) REFERENCES questions(query_id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS final_label_audits (
+    response_id INTEGER PRIMARY KEY,
+    human_hallucination_label INTEGER NOT NULL CHECK (human_hallucination_label IN (0, 1)),
+    automatic_hallucination_label INTEGER CHECK (automatic_hallucination_label IN (0, 1)),
+    final_hallucination_label INTEGER NOT NULL CHECK (final_hallucination_label IN (0, 1)),
+    review_status TEXT NOT NULL CHECK (
+        review_status IN ('agreement_confirmed', 'human_label_confirmed', 'abstention_confirmed')
+    ),
+    audit_reason TEXT NOT NULL,
+    rubric_version TEXT NOT NULL,
+    source_file TEXT NOT NULL,
+    audited_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (response_id) REFERENCES responses(response_id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS pilot_ml_dataset (
+    response_id INTEGER PRIMARY KEY,
+    query_id TEXT NOT NULL,
+    retrieval_experiment_id INTEGER NOT NULL,
+    feature_version TEXT NOT NULL,
+    pilot_split TEXT NOT NULL CHECK (pilot_split IN ('train', 'validation', 'test')),
+    retrieval_method TEXT NOT NULL,
+    top_k INTEGER NOT NULL,
+    score_max REAL NOT NULL,
+    score_min REAL NOT NULL,
+    score_mean REAL NOT NULL,
+    score_median REAL NOT NULL,
+    score_stddev REAL NOT NULL,
+    score_range REAL NOT NULL,
+    score_coefficient_variation REAL,
+    rank1_rank2_gap REAL,
+    rank1_rankk_decay REAL,
+    score_entropy REAL NOT NULL,
+    normalized_score_entropy REAL NOT NULL,
+    near_top_passage_count INTEGER NOT NULL,
+    unique_document_count INTEGER NOT NULL,
+    source_diversity_ratio REAL NOT NULL,
+    duplicate_context_ratio REAL NOT NULL,
+    context_character_count INTEGER NOT NULL,
+    context_token_count INTEGER NOT NULL,
+    query_character_count INTEGER NOT NULL,
+    query_token_count INTEGER NOT NULL,
+    lexical_overlap REAL NOT NULL,
+    mean_pairwise_context_diversity REAL NOT NULL,
+    bm25_dense_score_correlation REAL,
+    hallucination_label INTEGER NOT NULL CHECK (hallucination_label IN (0, 1)),
+    FOREIGN KEY (response_id) REFERENCES responses(response_id) ON DELETE CASCADE,
+    FOREIGN KEY (query_id) REFERENCES questions(query_id) ON DELETE CASCADE,
+    FOREIGN KEY (retrieval_experiment_id) REFERENCES experiments(experiment_id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS import_runs (
